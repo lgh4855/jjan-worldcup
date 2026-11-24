@@ -835,5 +835,97 @@ const CREDITS={
    "lic": "Public domain",
    "url": "https://commons.wikimedia.org/wiki/File:NCI_Visuals_Food_Hamburger.jpg"
   }
+ },
+ "conv": {
+  "감자칩": {
+   "t": "Chips in a bowl at a party.JPG",
+   "by": "Tomwsulcer",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Chips_in_a_bowl_at_a_party.JPG"
+  },
+  "과일주스": {
+   "t": "Orange juice 1 edit1.jpg",
+   "by": "Agency of the United States Department of Agriculture Edited",
+   "lic": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Orange_juice_1_edit1.jpg"
+  },
+  "군만두": {
+   "t": "Japanese pan fried gyoza.jpg",
+   "by": "Adryan R. Villanueva",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Japanese_pan_fried_gyoza.jpg"
+  },
+  "도시락": {
+   "t": "Dosirak.jpg",
+   "by": "Sharon Ang",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Dosirak.jpg"
+  },
+  "바나나우유": {
+   "t": "Binggrae Banana Flavored Milk 03.jpg",
+   "by": "KOREA.NET",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Binggrae_Banana_Flavored_Milk_03.jpg"
+  },
+  "삼각김밥": {
+   "t": "Onigiri at a convenience store by typester in Kamakura.jpg",
+   "by": "typester from Kamakura, Kanagawa",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Onigiri_at_a_convenience_store_by_typester_in_Kamakura.jpg"
+  },
+  "샌드위치": {
+   "t": "Club-sandwich.jpg",
+   "by": "Memm",
+   "lic": "CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Club-sandwich.jpg"
+  },
+  "아이스크림": {
+   "t": "Ice cream cone with spoon.jpg",
+   "by": "Thegreatmutata",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Ice_cream_cone_with_spoon.jpg"
+  },
+  "젤리": {
+   "t": "Shameless Snacks gummy bears.jpg",
+   "by": "Mx. Granger",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Shameless_Snacks_gummy_bears.jpg"
+  },
+  "초콜릿": {
+   "t": "Ten Pieces of Cadbury Chocolate Bars Group Up Together.jpg",
+   "by": "Brassluff",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Ten_Pieces_of_Cadbury_Chocolate_Bars_Group_Up_Together.jpg"
+  },
+  "캔커피": {
+   "t": "Photograph of Canned Coffee Cans.jpg",
+   "by": "Lucas Kelleher",
+   "lic": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Photograph_of_Canned_Coffee_Cans.jpg"
+  },
+  "컵라면": {
+   "t": "Nissin Cup Noodle (Original) - 01.jpg",
+   "by": "Quercus acuta",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Nissin_Cup_Noodle_(Original)_-_01.jpg"
+  },
+  "탄산음료": {
+   "t": "Glass of Cola.jpg",
+   "by": "Cocktailmarler",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Glass_of_Cola.jpg"
+  },
+  "푸딩": {
+   "t": "Homemade Flan.jpg",
+   "by": "Cary Bass",
+   "lic": "CC BY-SA 2.5",
+   "url": "https://commons.wikimedia.org/wiki/File:Homemade_Flan.jpg"
+  },
+  "핫바": {
+   "t": "Busan eomuk.jpg",
+   "by": "seul5167",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Busan_eomuk.jpg"
+  }
  }
 };
