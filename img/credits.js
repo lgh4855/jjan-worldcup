@@ -385,5 +385,181 @@ const CREDITS={
    "lic": "CC BY 4.0",
    "url": "https://commons.wikimedia.org/wiki/File:Chengdu_Hot_Pot_Yuanyangguo_style_2019.jpg"
   }
+ },
+ "anju": {
+  "간장게장": {
+   "t": "Korean seafood-Ganjang gejang-01.jpg",
+   "by": "derivative work: Caspian blue (talk) Korean.cuisine-Ganjang_",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean_seafood-Ganjang_gejang-01.jpg"
+  },
+  "감자튀김": {
+   "t": "Cajun fries from Popeyes Louisiana Kitchen, Stratford, Ontario, 2025-08-04.jpg",
+   "by": "Chris Woodrich",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Cajun_fries_from_Popeyes_Louisiana_Kitchen,_Stratford,_Ontario,_2025-08-04.jpg"
+  },
+  "계란말이": {
+   "t": "Gyeran-mari.jpg",
+   "by": "Hyeon-Jeong Suk",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Gyeran-mari.jpg"
+  },
+  "골뱅이무침": {
+   "t": "Golbaengi-muchim 2.jpg",
+   "by": "맘앤쿡",
+   "lic": "CC BY 2.0 kr",
+   "url": "https://commons.wikimedia.org/wiki/File:Golbaengi-muchim_2.jpg"
+  },
+  "군만두": {
+   "t": "Japanese pan fried gyoza.jpg",
+   "by": "Adryan R. Villanueva",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Japanese_pan_fried_gyoza.jpg"
+  },
+  "굴전": {
+   "t": "Guljeon.jpg",
+   "by": "Dr 방원장",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Guljeon.jpg"
+  },
+  "김치찌개": {
+   "t": "Korean.cuisine-Kimchi jjigae-01.jpg",
+   "by": "by avlxyz",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean.cuisine-Kimchi_jjigae-01.jpg"
+  },
+  "낙지볶음": {
+   "t": "Nakji-bokkeum, Stir-Fried Octopus.jpg",
+   "by": "Korea.net / Korean Culture and Information Service",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Nakji-bokkeum,_Stir-Fried_Octopus.jpg"
+  },
+  "노가리": {
+   "t": "Korean.cuisine-Anju-nogari.and.nuts.jpg",
+   "by": "by ayustety",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean.cuisine-Anju-nogari.and.nuts.jpg"
+  },
+  "닭발": {
+   "t": "Chicken feet.jpg",
+   "by": "User:Anna Frodesiak",
+   "lic": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Chicken_feet.jpg"
+  },
+  "땅콩": {
+   "t": "Roasted Peanuts with shell.jpg",
+   "by": "Sanjay Acharya",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Roasted_Peanuts_with_shell.jpg"
+  },
+  "마라탕": {
+   "t": "Malatang from Hope Tree (20220226172344).jpg",
+   "by": "N509FZ",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Malatang_from_Hope_Tree_(20220226172344).jpg"
+  },
+  "번데기탕": {
+   "t": "Silkworm snack.jpg",
+   "by": "Meniscus at English Wikipedia",
+   "lic": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Silkworm_snack.jpg"
+  },
+  "보쌈": {
+   "t": "Korean cuisine-Bossam-04.jpg",
+   "by": "Timber Tank",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean_cuisine-Bossam-04.jpg"
+  },
+  "부대찌개": {
+   "t": "Budae jjigae indonesia.jpg",
+   "by": "Agus Damanik",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Budae_jjigae_indonesia.jpg"
+  },
+  "삼겹살": {
+   "t": "Korean.cuisine-Samgyeopsal-01.jpg",
+   "by": "by hellochris",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean.cuisine-Samgyeopsal-01.jpg"
+  },
+  "소곱창": {
+   "t": "Gopchang 2.jpg",
+   "by": "뚱표아빠의 세상사는 이야기",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Gopchang_2.jpg"
+  },
+  "소시지 야채볶음": {
+   "t": "Stir-Fried Cabbage and Mixed Vegetables with Sliced Sausages.jpg",
+   "by": "Uthman salma",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Stir-Fried_Cabbage_and_Mixed_Vegetables_with_Sliced_Sausages.jpg"
+  },
+  "수박": {
+   "t": "Slices of watermelon.jpg",
+   "by": "Funmoring46",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Slices_of_watermelon.jpg"
+  },
+  "양념치킨": {
+   "t": "Yangnyeom Chicken Korean fried chicken.jpg",
+   "by": "Startandstar",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Yangnyeom_Chicken_Korean_fried_chicken.jpg"
+  },
+  "어묵탕": {
+   "t": "Eomuk-tang 2.jpg",
+   "by": "bigtorica",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Eomuk-tang_2.jpg"
+  },
+  "육회": {
+   "t": "2020-10-20 육회.jpeg",
+   "by": "revi",
+   "lic": "CC BY-SA 2.0 kr",
+   "url": "https://commons.wikimedia.org/wiki/File:2020-10-20_%EC%9C%A1%ED%9A%8C.jpeg"
+  },
+  "족발": {
+   "t": "Jokbal 2.jpg",
+   "by": "국립국어원",
+   "lic": "CC BY-SA 2.0 kr",
+   "url": "https://commons.wikimedia.org/wiki/File:Jokbal_2.jpg"
+  },
+  "짬뽕탕": {
+   "t": "Jjamppong-sujebi 2.jpg",
+   "by": "대경라이프",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Jjamppong-sujebi_2.jpg"
+  },
+  "치즈 나쵸": {
+   "t": "Nachos with Melted Cheese, Jalapenos, and Tasty Toppings.jpg",
+   "by": "روتانا",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Nachos_with_Melted_Cheese,_Jalapenos,_and_Tasty_Toppings.jpg"
+  },
+  "콘치즈": {
+   "t": "Corn cheese.jpg",
+   "by": "anokarina",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Corn_cheese.jpg"
+  },
+  "파전": {
+   "t": "Pajeon (spring onion pancake) - Kogi, Brighton.jpg",
+   "by": "Andy Li",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Pajeon_(spring_onion_pancake)_-_Kogi,_Brighton.jpg"
+  },
+  "회 한 접시": {
+   "t": "Korean.food-Hoe-02.jpg",
+   "by": "by ebifry",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean.food-Hoe-02.jpg"
+  },
+  "후라이드 치킨": {
+   "t": "Iksan City 48 Korean Style Fried chicken.jpg",
+   "by": "KOREA.NET",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Iksan_City_48_Korean_Style_Fried_chicken.jpg"
+  }
  }
 };
