@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>방장 화면 공유 · 짠! 월드컵</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;700;900&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="lobby"></section>
+<section id="room" class="hide"></section>
+<section id="play" class="hide">
+  <div>
+    <div class="top">
+      <button id="quit">✕ 나가기</button>
+      <h2 id="rlabel"></h2>
+      <button id="codeBtn">방</button>
+    </div>
+    <div class="prog"><i id="pbar"></i></div>
+  </div>
+  <div class="arena" id="arena"></div>
+  <div class="foot" id="foot"></div>
+</section>
+<section id="result" class="hide"></section>
+<div id="net" class="net hide">연결이 끊겼어요. 다시 연결하는 중…</div>
+<div id="ov" class="ov hide"></div>
+<script>window.MODE='sync'</script>
+<script src="https://unpkg.com/mqtt@5.10.1/dist/mqtt.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script src="data.js"></script>
+<script src="online.js"></script>
+</body>
+</html>

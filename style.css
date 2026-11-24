@@ -1,0 +1,144 @@
+/*
+VOICE: 포장마차 플라스틱 테이블 위에서 큰 소리로 하는 게임. 시끄럽고 따뜻하게.
+IDEA: 주황 포차 천막 + 초록 소주병 라벨. 매치 화면은 테이블 위 두 장의 메뉴판.
+PICTURE: 대결 화면의 큰 카드 두 장이 그림 자체. 홈은 천막 줄무늬 + 소주병 일러스트.
+COLOUR and TYPE: 천막 주황 #ff5a1f, 소주병 초록 #0f7a4a, 노란 전구 #ffd23f. Black Han Sans + Noto Sans KR.
+LAYOUT: 홈은 장르 카드 그리드, 경기는 전체 화면 2분할(폰에선 위아래).
+*/
+:root{color-scheme:light dark;--bg:light-dark(#fff8ef,#1b1410);--card:light-dark(#ffffff,#2a201a);--ink:light-dark(#22140c,#fff3e6);--mute:light-dark(#7a6656,#c4ab95);--line:light-dark(#f0dcc6,#3d2e24);--tent:#ff5a1f;--soju:#0f7a4a;--bulb:#ffd23f}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Noto Sans KR",system-ui,sans-serif;overflow-x:clip;-webkit-tap-highlight-color:transparent}
+h1,h2,h3,.disp{font-family:"Black Han Sans","Noto Sans KR",sans-serif;font-weight:400;line-height:1.05;margin:0;text-wrap:balance}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none;min-height:44px}
+button:focus-visible,textarea:focus-visible,input:focus-visible,label:focus-within{outline:3px solid var(--bulb);outline-offset:2px}
+.hide{display:none!important}
+.tent{height:34px;background:repeating-linear-gradient(90deg,var(--tent) 0 48px,#fff 48px 96px);-webkit-mask:radial-gradient(24px at 24px 10px,#000 98%,#0000) 0 0/48px 100% repeat-x,linear-gradient(#000 0 0) top/100% 10px no-repeat;mask:radial-gradient(24px at 24px 10px,#000 98%,#0000) 0 0/48px 100% repeat-x,linear-gradient(#000 0 0) top/100% 10px no-repeat}
+.hero{background:var(--tent);color:#fff;padding:clamp(24px,4vw,48px) max(5vw,16px) 8px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:end}
+.hero h1{font-size:clamp(44px,8vw,84px)}
+.hero p{margin:10px 0 0;font-size:17px;max-width:34em;opacity:.95}
+.hero svg{width:clamp(90px,16vw,170px);height:auto;display:block}
+.bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:20px max(5vw,16px) 0;max-width:1240px;margin:auto}
+.party{display:flex;gap:12px;align-items:center;background:var(--card);border:2px solid var(--line);border-radius:999px;padding:6px 18px 6px 8px;cursor:pointer;font-weight:700}
+.party input{appearance:none;width:52px;height:30px;border-radius:99px;background:var(--line);position:relative;margin:0;cursor:pointer;transition:.2s}
+.party input::after{content:"";position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:#fff;box-shadow:0 1px 3px #0004;transition:.2s}
+.party input:checked{background:var(--soju)}.party input:checked::after{left:25px}
+.party small{display:block;font-weight:400;color:var(--mute);font-size:13px;line-height:1.3}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:16px;padding:20px max(5vw,16px) 48px;max-width:1240px;margin:auto}
+.g{position:relative;text-align:left;background:var(--card);border:2px solid var(--line);border-radius:20px;padding:18px 18px 16px;display:grid;gap:6px;overflow:hidden;transition:transform .15s,border-color .15s}
+.g:hover{transform:translateY(-3px);border-color:var(--h)}
+.g .em{font-size:44px;line-height:1;width:72px;height:72px;display:grid;place-items:center;border-radius:18px;background:color-mix(in srgb,var(--h) 18%,transparent)}
+.g h3{font-size:24px;margin-top:6px}
+.g p{margin:0;color:var(--mute);font-size:14px}
+.g .n{position:absolute;top:16px;right:16px;font-size:13px;font-weight:700;color:var(--h)}
+.g.custom{border-style:dashed;--h:var(--soju)}
+footer{text-align:center;color:var(--mute);font-size:13px;padding:0 16px 32px}
+/* match */
+#play{position:fixed;inset:0;display:grid;grid-template-rows:auto 1fr auto;background:var(--bg);z-index:5}
+.top{display:flex;align-items:center;gap:8px;padding:10px max(3vw,12px);background:var(--tent);color:#fff}
+.top h2{font-size:clamp(20px,3vw,28px);flex:1;text-align:center}
+.top button{padding:0 14px;border-radius:12px;background:#0002;font-weight:700;font-size:15px}
+.top button:disabled{opacity:.4}
+.prog{height:6px;background:#0002}.prog i{display:block;height:100%;background:var(--bulb);transition:width .3s}
+.arena{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(10px,2vw,24px);padding:clamp(10px,2vw,24px);min-height:0}
+.c{position:relative;border-radius:24px;display:grid;place-items:center;align-content:center;gap:12px;padding:20px;color:#fff;overflow:hidden;box-shadow:0 10px 0 #0002;transition:transform .25s,opacity .25s,filter .25s}
+.c:nth-child(1){background:linear-gradient(160deg,var(--tent),#d43a0c)}
+.c:nth-child(2){background:linear-gradient(160deg,#16975d,var(--soju))}
+.c:hover{transform:scale(1.015)}
+.c .em{font-size:clamp(70px,15vmin,170px);line-height:1;filter:drop-shadow(0 6px 0 #0003)}
+.c .nm{font-family:"Black Han Sans",sans-serif;font-size:clamp(28px,5vmin,54px);line-height:1.1;text-align:center;text-wrap:balance}
+.c img{width:min(100%,520px);max-height:52vh;object-fit:cover;border-radius:16px;border:4px solid #fff}
+.c.win{transform:scale(1.04)}.c.lose{opacity:.25;filter:grayscale(1)}
+.vs{position:absolute;left:50%;top:50%;translate:-50% -50%;width:74px;height:74px;border-radius:50%;background:var(--bulb);color:#22140c;display:grid;place-items:center;font:30px "Black Han Sans",sans-serif;box-shadow:0 0 0 6px var(--bg);pointer-events:none;z-index:2}
+.foot{display:flex;justify-content:center;gap:10px;padding:0 12px 14px;flex-wrap:wrap}
+.btn{padding:10px 22px;border-radius:999px;background:var(--ink);color:var(--bg);font-weight:900}
+.btn.alt{background:var(--card);color:var(--ink);border:2px solid var(--line)}
+.btn.go{background:var(--bulb);color:#22140c}
+/* overlays */
+.ov{position:fixed;inset:0;z-index:20;display:grid;place-items:center;padding:16px;background:#1b1410cc;backdrop-filter:blur(3px)}
+.box{background:var(--card);border-radius:24px;padding:clamp(20px,4vw,32px);width:min(100%,520px);max-height:92vh;overflow:auto;display:grid;gap:14px}
+.box h2{font-size:30px}.box p{margin:0;color:var(--mute)}
+.sizes{display:flex;flex-wrap:wrap;gap:10px}
+.sizes button{flex:1 1 90px;border-radius:16px;border:2px solid var(--line);font:24px "Black Han Sans",sans-serif;padding:12px}
+.sizes button:hover{border-color:var(--tent);color:var(--tent)}
+.count{font:clamp(120px,30vw,240px) "Black Han Sans",sans-serif;color:var(--bulb);text-align:center;animation:pop .6s}
+@keyframes pop{from{transform:scale(1.8);opacity:0}}
+.toast{position:fixed;left:50%;bottom:84px;translate:-50% 0;background:var(--bulb);color:#22140c;font-weight:900;padding:12px 22px;border-radius:16px;z-index:15;box-shadow:0 6px 20px #0004;text-align:center;max-width:92vw;animation:pop .3s}
+.mission{background:var(--soju);color:#fff;text-align:center}
+.mission p{color:#fff;font-size:22px;font-weight:700}
+.mission .tag{font:16px "Black Han Sans";color:var(--bulb)}
+/* result */
+#result{position:fixed;inset:0;overflow:auto;z-index:6;background:var(--bg)}
+.crown{background:var(--tent);color:#fff;text-align:center;padding:24px 16px 32px}
+.crown .em{font-size:clamp(90px,20vw,160px);line-height:1.1}
+.crown img{width:min(80vw,320px);aspect-ratio:1;object-fit:cover;border-radius:24px;border:6px solid #fff}
+.crown h2{font-size:clamp(40px,8vw,72px);margin-top:8px}
+.crown .sub{font-weight:700;color:var(--bulb);margin-bottom:6px}
+.res{max-width:760px;margin:auto;padding:24px 16px 48px;display:grid;gap:22px}
+.res h3{font-size:22px;margin-bottom:8px}
+.path{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.path li{display:flex;gap:10px;align-items:center;background:var(--card);border:2px solid var(--line);border-radius:14px;padding:8px 14px}
+.path b{min-width:3.4em;color:var(--tent)}
+.rank{display:grid;gap:6px}
+.rank div{display:grid;grid-template-columns:2em minmax(0,9em) minmax(0,1fr) 2.6em;gap:8px;align-items:center;font-size:15px}
+.rank span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rank i{height:14px;border-radius:7px;background:var(--soju);display:block}
+.rank em{font-style:normal;text-align:right;color:var(--mute)}
+.acts{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+textarea{width:100%;min-height:180px;font:16px/1.5 inherit;padding:12px;border-radius:14px;border:2px solid var(--line);background:var(--bg);color:var(--ink);resize:vertical}
+input[type=text]{width:100%;font-size:16px;padding:12px;border-radius:14px;border:2px solid var(--line);background:var(--bg);color:var(--ink)}
+.file{display:block;border:2px dashed var(--line);border-radius:14px;padding:12px;text-align:center;cursor:pointer;color:var(--mute)}
+.file input{display:none}
+.err{color:var(--tent)!important;font-weight:700}
+@media(max-width:600px),(orientation:portrait) and (max-width:900px){
+ .arena{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) minmax(0,1fr)}
+ .c img{max-height:24vh}
+ .vs{width:58px;height:58px;font-size:24px}
+}
+@media(max-width:600px){.hero{grid-template-columns:minmax(0,1fr)}.hero svg{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* ---------- 같이 하기 (홈) ---------- */
+.modes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px;padding:20px max(5vw,16px) 0;max-width:1240px;margin:auto}
+.mode{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 16px;align-items:center;text-decoration:none;color:#fff;border-radius:20px;padding:18px 20px;box-shadow:0 6px 0 #0002;transition:transform .15s}
+.mode:hover{transform:translateY(-3px)}
+.mode.s{background:linear-gradient(150deg,var(--tent),#d43a0c)}.mode.v{background:linear-gradient(150deg,#16975d,var(--soju))}
+.mode .em{font-size:44px;grid-row:span 2}
+.mode h3{font-size:26px}.mode p{margin:0;font-size:14px;opacity:.92}
+.sect{max-width:1240px;margin:auto;padding:28px max(5vw,16px) 0;font-size:24px}
+/* ---------- 온라인 ---------- */
+.hero.mini{grid-template-columns:minmax(0,1fr);padding-bottom:8px}
+.hero.mini h1{font-size:clamp(36px,7vw,60px)}
+.back{color:#fff;opacity:.9;font-weight:700;text-decoration:none;display:inline-block;margin-bottom:10px}
+.lob{max-width:460px;margin:24px auto 48px;padding:0 16px;display:grid;gap:14px}
+.lob label{display:grid;gap:6px;font-weight:700}
+.lob .row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px}
+.lob #cd{text-transform:uppercase;letter-spacing:.3em;font-weight:900;text-align:center}
+.lob p{margin:0;color:var(--mute);font-size:14px;text-align:center}
+.lob .btn{min-height:52px;font-size:17px}
+.or{display:flex;align-items:center;gap:10px;color:var(--mute);font-size:14px;margin-top:6px}
+.or::before,.or::after{content:"";flex:1;height:2px;background:var(--line)}
+.btn:disabled{opacity:.45;cursor:default}
+.roomtop{max-width:1240px;margin:auto;padding:20px max(5vw,16px) 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:20px;align-items:start}
+.share{display:flex;gap:18px;align-items:center;background:var(--card);border:2px solid var(--line);border-radius:20px;padding:16px;flex-wrap:wrap}
+.share p{margin:0;color:var(--mute);font-size:14px}
+.qr{width:150px;height:150px;background:#fff;border-radius:12px;padding:4px;flex:none}.qr svg{width:100%;height:100%;display:block}
+.code{font:clamp(44px,10vw,64px)/1 "Black Han Sans",sans-serif;letter-spacing:.12em;color:var(--tent);margin:4px 0 10px}
+.people h3,.board h3{font-size:22px;margin-bottom:10px}.people h3 span{color:var(--mute);font:16px "Noto Sans KR"}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}.people .chips{justify-content:flex-start}
+.chip{background:var(--card);border:2px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:700;font-size:15px}
+.chip.ok{background:var(--soju);border-color:var(--soju);color:#fff}
+.board{margin-top:18px}
+.pick{max-width:1240px;margin:28px auto 0;padding:0 max(5vw,16px);font-size:28px}
+.waiting{text-align:center;font-size:20px;font-weight:700;color:var(--mute);padding:40px 16px}
+.arena.ro .c{cursor:default}.arena.ro .c:hover{transform:none}
+.c.mine{outline:8px solid var(--bulb);outline-offset:-8px}
+.c .vc{background:var(--bulb);color:#22140c;font-weight:900;border-radius:999px;padding:4px 14px;font-size:18px}
+.c .who{font-size:15px;font-weight:700;text-align:center;max-width:90%}
+.foot{flex-direction:column;align-items:center;gap:8px}
+.hint{margin:0;color:var(--mute);font-size:14px;text-align:center}.hint.big{font-size:17px;font-weight:700;color:var(--ink)}
+.drink{margin:0;background:var(--bulb);color:#22140c;font-weight:900;font-size:clamp(17px,4vw,22px);padding:10px 20px;border-radius:16px;text-align:center}
+.top #codeBtn{letter-spacing:.06em}
+.net{position:fixed;top:0;left:0;right:0;z-index:30;background:#c62828;color:#fff;text-align:center;font-weight:700;padding:8px}
+.tent.flip{background:repeating-linear-gradient(90deg,var(--tent) 0 48px,var(--bg) 48px 96px);rotate:180deg}
+@media(max-width:600px){.qr{width:120px;height:120px}.foot .chips .chip{font-size:13px;padding:4px 10px}}
