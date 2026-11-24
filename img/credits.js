@@ -647,5 +647,193 @@ const CREDITS={
    "lic": "CC0",
    "url": "https://commons.wikimedia.org/wiki/File:A_glass_of_Stout_from_Cloudwater.jpg"
   }
+ },
+ "yasik": {
+  "감자탕": {
+   "t": "Gamja-tang 5.jpg",
+   "by": "travel oriented",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Gamja-tang_5.jpg"
+  },
+  "김밥": {
+   "t": "Gimbap (pixabay).jpg",
+   "by": "changupn",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Gimbap_(pixabay).jpg"
+  },
+  "꼬치": {
+   "t": "Dak-kkochi 1.jpg",
+   "by": "향긋한 커피매니아",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Dak-kkochi_1.jpg"
+  },
+  "도넛": {
+   "t": "Glazed doughnut (1387333).jpg",
+   "by": "Unknown authorUnknown author",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Glazed_doughnut_(1387333).jpg"
+  },
+  "돈까스": {
+   "t": "Tonkatsu of Kimukatsu.jpg",
+   "by": "Minseong Kim",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Tonkatsu_of_Kimukatsu.jpg"
+  },
+  "떡볶이": {
+   "t": "Korean.snacks-Tteokbokki-08.jpg",
+   "by": "by jetalone (flickr)",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean.snacks-Tteokbokki-08.jpg"
+  },
+  "라면": {
+   "t": "Ramen Jump 002.jpg",
+   "by": "Ocdp",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Ramen_Jump_002.jpg"
+  },
+  "랍스터": {
+   "t": "Lobster Thermidor.jpg",
+   "by": "thefoodplace.co.uk",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Lobster_Thermidor.jpg"
+  },
+  "마라샹궈": {
+   "t": "Malaxiangguo in China.jpg",
+   "by": "Qinrong0115",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Malaxiangguo_in_China.jpg"
+  },
+  "만두": {
+   "t": "Japanese pan fried gyoza.jpg",
+   "by": "Adryan R. Villanueva",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Japanese_pan_fried_gyoza.jpg"
+  },
+  "부리또": {
+   "t": "Burrito al pastor - Bacalar QR.jpg",
+   "by": "Bernard DUPONT",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Burrito_al_pastor_-_Bacalar_QR.jpg"
+  },
+  "샌드위치": {
+   "t": "Club-sandwich.jpg",
+   "by": "Memm",
+   "lic": "CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Club-sandwich.jpg"
+  },
+  "순댓국": {
+   "t": "Korean soup Sundae gukbap 01.jpg",
+   "by": "Mar del Este",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean_soup_Sundae_gukbap_01.jpg"
+  },
+  "스테이크": {
+   "t": "Steak and onions.jpg",
+   "by": "E4024",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Steak_and_onions.jpg"
+  },
+  "쌀국수": {
+   "t": "Phở bò in a German restaurant 02.jpg",
+   "by": "Kritzolina",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Ph%E1%BB%9F_b%C3%B2_in_a_German_restaurant_02.jpg"
+  },
+  "아이스크림": {
+   "t": "Ice cream cone with spoon.jpg",
+   "by": "Thegreatmutata",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Ice_cream_cone_with_spoon.jpg"
+  },
+  "양꼬치": {
+   "t": "양꼬치.jpg",
+   "by": "악미",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:%EC%96%91%EA%BC%AC%EC%B9%98.jpg"
+  },
+  "주먹밥": {
+   "t": "Jumeok-bap.jpg",
+   "by": "Chloe Lim",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Jumeok-bap.jpg"
+  },
+  "짜장면": {
+   "t": "Jajangmyeon by KFoodaddict.jpg",
+   "by": "KFoodaddict",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Jajangmyeon_by_KFoodaddict.jpg"
+  },
+  "초밥": {
+   "t": "Nigiri Sushi (26505096851).jpg",
+   "by": "Tim Reckmann from Hamm, Deutschland",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Nigiri_Sushi_(26505096851).jpg"
+  },
+  "치킨": {
+   "t": "Iksan City 48 Korean Style Fried chicken.jpg",
+   "by": "KOREA.NET",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Iksan_City_48_Korean_Style_Fried_chicken.jpg"
+  },
+  "카레": {
+   "t": "Beef curry rice 003.jpg",
+   "by": "Ocdp",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Beef_curry_rice_003.jpg"
+  },
+  "칼국수": {
+   "t": "Kal-guksu 1.jpg",
+   "by": "travel oriented",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Kal-guksu_1.jpg"
+  },
+  "크루아상": {
+   "t": "Croissants au beurre (18953292873).jpg",
+   "by": "Herry Wibisono (herryway)",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Croissants_au_beurre_(18953292873).jpg"
+  },
+  "타코": {
+   "t": "(El Flaco) Al Pastor Tacos.jpg",
+   "by": "City Foodsters",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:(El_Flaco)_Al_Pastor_Tacos.jpg"
+  },
+  "타코야끼": {
+   "t": "Takoyaki by yomi955.jpg",
+   "by": "heiwa4126",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Takoyaki_by_yomi955.jpg"
+  },
+  "텐동": {
+   "t": "Tendon one meal.jpg",
+   "by": "LR0725",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Tendon_one_meal.jpg"
+  },
+  "토스트": {
+   "t": "Gilgeori toast 4.jpg",
+   "by": "gildedgingerbread",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Gilgeori_toast_4.jpg"
+  },
+  "팔라펠": {
+   "t": "Falafel 1.JPG",
+   "by": "Miansari66",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Falafel_1.JPG"
+  },
+  "피자": {
+   "t": "New York-Style Pizza-crop.png",
+   "by": "Pnickell0",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:New_York-Style_Pizza-crop.png"
+  },
+  "햄버거": {
+   "t": "NCI Visuals Food Hamburger.jpg",
+   "by": "Len Rizzi (photographer)",
+   "lic": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:NCI_Visuals_Food_Hamburger.jpg"
+  }
  }
 };
