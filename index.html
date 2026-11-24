@@ -35,7 +35,7 @@
     <a class="mode v" href="vote.html"><span class="em">🗳️</span><h3>다 같이 투표</h3><p>각자 몰래 투표 → 공개! 소수파 이름이 불려요</p></a>
   </div>
   <h2 class="sect">폰 하나로 하기</h2>
-  <main class="grid" id="grid"></main>
+  <main id="browser"></main>
   <footer>후보는 텍스트와 이모지로 되어 있어요. "나만의 월드컵"에서 친구들 사진이나 원하는 후보로 직접 만들 수 있어요.</footer>
 </div>
 
@@ -66,10 +66,7 @@ $('#partyT').checked=party;
 $('#partyT').onchange=e=>{party=e.target.checked;store.set('jjan-party',party)};
 $('#cnt').textContent=`월드컵 ${GENRES.length}종 · 후보 ${GENRES.reduce((a,g)=>a+g.items.length,0)}개`;
 
-$('#grid').innerHTML=GENRES.map(g=>`<button class="g" style="--h:${g.h}" data-id="${g.id}">
- <span class="n">${g.items.length}강</span><span class="em">${g.e}</span><h3>${esc(g.t)}</h3><p>${esc(g.d)}</p></button>`).join('')
- +`<button class="g custom" data-id="custom"><span class="em">✏️</span><h3>나만의 월드컵</h3><p>후보를 직접 적거나 친구들 사진을 넣어서</p></button>`;
-$('#grid').onclick=e=>{const b=e.target.closest('.g');if(!b)return;b.dataset.id==='custom'?openCustom():pickSize(GENRES.find(g=>g.id===b.dataset.id))};
+genreBrowser($('#browser'),{onPick:id=>id==='custom'?openCustom():pickSize(GENRES.find(g=>g.id===id))});
 
 function sizesFor(n){const r=[];for(let s=4;s<=n;s*=2)r.push(s);return r.slice(-3)}
 function pickSize(g){

@@ -129,14 +129,14 @@ function room(){
  show('room');close();
  $('#room').innerHTML=`<header class="hero mini"><div><h1>${T.em} 방 ${esc(code)}</h1><p>${isHost?'친구들한테 QR을 보여주거나 링크를 보내세요. 다 모이면 월드컵을 골라요.':'들어왔어요! 방장이 월드컵을 고르는 중이에요…'}</p></div></header><div class="tent"></div>
  <div class="roomtop">${shareBox()}<div class="people"><h3>참가자 <span id="pc"></span></h3><div class="chips" id="chips"></div>${drinkBoard()}</div></div>
- ${isHost?`<h2 class="pick">어떤 월드컵을 할까요?</h2><div class="grid" id="ggrid">${GENRES.map(g=>`<button class="g" style="--h:${g.h}" data-id="${g.id}"><span class="n">${g.items.length}강</span><span class="em">${g.e}</span><h3>${esc(g.t)}</h3><p>${esc(g.d)}</p></button>`).join('')}<button class="g custom" data-id="custom"><span class="em">✏️</span><h3>나만의 월드컵</h3><p>후보를 직접 적어서</p></button></div>`:'<p class="waiting">⏳ 잠시만 기다려 주세요</p>'}
+ ${isHost?`<h2 class="pick">어떤 월드컵을 할까요?</h2><div id="gbrowse"></div>`:'<p class="waiting">⏳ 잠시만 기다려 주세요</p>'}
  <div class="acts" style="padding:8px 16px 40px"><button class="btn alt" id="lv">${isHost?'방 닫기':'방 나가기'}</button></div>`;
  renderPlayers();
+ if(isHost)genreBrowser($('#gbrowse'),{customDesc:'후보를 직접 적어서',onPick:id=>id==='custom'?customGame():pickSize(GENRES.find(g=>g.id===id))});
  $('#room').onclick=e=>{
   const b=e.target.closest('button');if(!b)return;
   if(b.hasAttribute('data-cp'))return copy(joinUrl(),b);
   if(b.id==='lv')return quit();
-  if(b.classList.contains('g'))b.dataset.id==='custom'?customGame():pickSize(GENRES.find(g=>g.id===b.dataset.id));
  };
 }
 function pickSize(g){

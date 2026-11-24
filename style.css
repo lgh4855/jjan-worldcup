@@ -142,3 +142,12 @@ input[type=text]{width:100%;font-size:16px;padding:12px;border-radius:14px;borde
 .net{position:fixed;top:0;left:0;right:0;z-index:30;background:#c62828;color:#fff;text-align:center;font-weight:700;padding:8px}
 .tent.flip{background:repeating-linear-gradient(90deg,var(--tent) 0 48px,var(--bg) 48px 96px);rotate:180deg}
 @media(max-width:600px){.qr{width:120px;height:120px}.foot .chips .chip{font-size:13px;padding:4px 10px}}
+/* ---------- 카테고리 ---------- */
+.cats{display:flex;gap:8px;overflow-x:auto;overscroll-behavior-x:contain;max-width:1240px;margin:auto;padding:16px max(5vw,16px) 4px;scrollbar-width:none}
+.cats::-webkit-scrollbar{display:none}
+.cat{flex:none;border-radius:999px;border:2px solid var(--line);background:var(--card);padding:0 16px;font-weight:700;font-size:15px;white-space:nowrap}
+.cat small{color:var(--mute);font-weight:400;margin-left:2px}
+.cat.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}.cat.on small{color:inherit;opacity:.7}
+.cath{max-width:1240px;margin:auto;padding:22px max(5vw,16px) 0;font-size:22px}
+.gb .grid{padding-top:12px;padding-bottom:4px}
+.gb{padding-bottom:40px}
