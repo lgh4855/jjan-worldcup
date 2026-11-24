@@ -36,7 +36,7 @@
   </div>
   <h2 class="sect">폰 하나로 하기</h2>
   <main id="browser"></main>
-  <footer>후보는 텍스트와 이모지로 되어 있어요. "나만의 월드컵"에서 친구들 사진이나 원하는 후보로 직접 만들 수 있어요.</footer>
+  <footer>후보 사진은 <a href="photos.html">📷 사진 관리</a>에서 넣을 수 있어요. "나만의 월드컵"에서는 폰에 있는 사진으로 바로 만들 수 있어요.</footer>
 </div>
 
 <section id="play" class="hide">
@@ -86,12 +86,12 @@ function start(g,size){
  S={g,size,round:shuffle(g.items).slice(0,size),next:[],i:0,log:[],done:0,total:size-1};hist=[];
  $('#home').classList.add('hide');$('#result').classList.add('hide');$('#play').classList.remove('hide');render()}
 const rname=n=>n===2?'결승':n===4?'준결승':n+'강';
-function card(it,k){return `<button class="c${it.n.length>16?' long':''}" data-k="${k}">${it.img?`<img src="${it.img}" alt="">`:`<span class="em">${esc(it.e)}</span>`}<span class="nm">${esc(it.n)}</span></button>`}
+function card(it,k){return `<button class="c${it.n.length>16?' long':''}" data-k="${k}" data-pg="${esc(S.g.id)}" data-pn="${esc(it.n)}">${it.img?`<img src="${it.img}" alt="">`:`<span class="em">${esc(it.e)}</span><img class="ph" alt="">`}<span class="nm">${esc(it.n)}</span></button>`}
 function render(){
  const r=S.round,a=r[S.i],b=r[S.i+1];
  $('#rlabel').textContent=`${rname(r.length)}${r.length>2?` ${S.i/2+1}/${r.length/2}`:''} · ${S.g.t.replace(/ 월드컵$/,'')}`;
  $('#pbar').style.width=(S.done/S.total*100)+'%';
- $('#arena').innerHTML=card(a,0)+card(b,1)+'<div class="vs">VS</div>';
+ $('#arena').innerHTML=card(a,0)+card(b,1)+'<div class="vs">VS</div>';loadPhotos($('#arena'));
  $('#undo').disabled=!hist.length;
  $('#foot').classList.toggle('hide',!party);busy=false}
 $('#arena').onclick=e=>{const c=e.target.closest('.c');if(!c||busy)return;choose(+c.dataset.k)};
@@ -126,8 +126,8 @@ function finish(){
  const path=S.log.filter(x=>x.w===w||x.w.n===w.n&&x.w.e===w.e);
  const top=Object.entries(rk).sort((a,b)=>b[1]-a[1]).slice(0,8),max=top[0]?.[1]||1;
  const res=$('#result');
- res.innerHTML=`<div class="crown"><div class="sub">${esc(g.t)} ${S.size}강 우승</div>
- ${w.img?`<img src="${w.img}" alt="">`:`<div class="em">${esc(w.e)}</div>`}<h2>${esc(w.n)}</h2>
+ res.innerHTML=`<div class="crown" data-pg="${esc(g.id)}" data-pn="${esc(w.n)}"><div class="sub">${esc(g.t)} ${S.size}강 우승</div>
+ ${w.img?`<img src="${w.img}" alt="">`:`<div class="em">${esc(w.e)}</div><img class="ph" alt="">`}<h2>${esc(w.n)}</h2>
  <p style="margin:8px 0 0">준우승 ${esc(second.e||'')} ${esc(second.n)}${party?' · 우승 맞춘 사람 벌주 면제, 나머지 다 같이 짠! 🍻':''}</p></div>
  <div class="tent" style="background:repeating-linear-gradient(90deg,var(--tent) 0 48px,var(--bg) 48px 96px);rotate:180deg"></div>
  <div class="res">
@@ -135,7 +135,7 @@ function finish(){
   <div><h3>우승까지의 길</h3><ol class="path">${path.map(x=>`<li><b>${x.r}</b><span>${esc(x.l.e||'')} ${esc(x.l.n)} 꺾음</span></li>`).join('')}</ol></div>
   ${top.length?`<div><h3>이 기기 누적 우승 랭킹</h3><div class="rank">${top.map(([n,c],i)=>`<div><b>${i+1}</b><span>${esc(n)}</span><i style="width:${c/max*100}%"></i><em>${c}회</em></div>`).join('')}</div></div>`:''}
  </div>`;
- $('#play').classList.add('hide');res.classList.remove('hide');res.scrollTop=0;
+ loadPhotos(res);$('#play').classList.add('hide');res.classList.remove('hide');res.scrollTop=0;
  $('#again').onclick=()=>start(g,S.size);$('#other').onclick=home;
  $('#copy').onclick=async e=>{const t=`🏆 ${g.t} ${S.size}강 우승: ${w.n}\n준우승: ${second.n}\n${path.map(x=>`${x.r} — ${x.l.n} 꺾음`).join('\n')}`;
   try{await navigator.clipboard.writeText(t);e.target.textContent='복사됨 ✓'}catch{e.target.textContent='복사 실패'}};

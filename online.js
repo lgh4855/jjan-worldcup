@@ -178,9 +178,9 @@ function play(){
  const who=[0,1].map(k=>Object.entries(d.votes||{}).filter(([,v])=>v===k).map(([id])=>d.names?.[id]||players[id]?.n||'?'));
  $('#arena').innerHTML=[d.round[d.i],d.round[d.i+1]].map((it,k)=>{
   const cls=rv&&d.win!=null?(d.win===k?' win':' lose'):(!rv&&mv===k?' mine':'');
-  return `<button class="c${cls}${String(it.n).length>16?' long':''}" data-k="${k}"><span class="em">${esc(it.e)}</span><span class="nm">${esc(it.n)}</span>
+  return `<button class="c${cls}${String(it.n).length>16?' long':''}" data-k="${k}" data-pg="${esc(d.g.id)}" data-pn="${esc(it.n)}"><span class="em">${esc(it.e)}</span><img class="ph" alt=""><span class="nm">${esc(it.n)}</span>
   ${rv?`<span class="vc">${who[k].length}표</span><span class="who">${who[k].map(esc).join(' · ')}</span>`:(!rv&&mv===k?'<span class="vc">내 선택 ✓</span>':'')}</button>`}).join('')+'<div class="vs">VS</div>';
- $('#arena').classList.toggle('ro',!canClick());
+ loadPhotos($('#arena'));$('#arena').classList.toggle('ro',!canClick());
  foot()}
 function foot(){
  const d=S,f=$('#foot');if(!d||d.phase==='lobby'||d.phase==='done')return;
@@ -228,7 +228,7 @@ function resolve(s,k){
 function result(){
  show('result');close();
  const d=S,w=d.winner,path=d.log.filter(x=>same(x.w,w));
- $('#result').innerHTML=`<div class="crown"><div class="sub">${esc(d.g.t)} ${d.size}강 우승</div><div class="em">${esc(w.e)}</div><h2>${esc(w.n)}</h2>
+ $('#result').innerHTML=`<div class="crown" data-pg="${esc(d.g.id)}" data-pn="${esc(w.n)}"><div class="sub">${esc(d.g.t)} ${d.size}강 우승</div><div class="em">${esc(w.e)}</div><img class="ph" alt=""><h2>${esc(w.n)}</h2>
  <p style="margin:8px 0 0">준우승 ${esc(d.second.e)} ${esc(d.second.n)} · 다 같이 짠! 🍻</p></div>
  <div class="tent flip"></div>
  <div class="res">
@@ -237,6 +237,7 @@ function result(){
   <div><h3>우승까지의 길</h3><ol class="path">${path.map(x=>`<li><b>${esc(x.r)}</b><span>${esc(x.l.e)} ${esc(x.l.n)} 꺾음</span></li>`).join('')}</ol></div>
   <div class="acts"><button class="btn alt" id="lv2">${isHost?'방 닫기':'방 나가기'}</button></div>
  </div>`;
+ loadPhotos($('#result'));
  $('#result').onclick=e=>{const b=e.target.closest('button');if(!b)return;
   if(b.id==='again'){const g=d.g.id==='custom'?{...d.g,items:d.citems||[]}:GENRES.find(x=>x.id===d.g.id);if(g)startGame(g,d.size)}
   if(b.id==='other'){const s=clone(S);s.phase='lobby';setState(s)}

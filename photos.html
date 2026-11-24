@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>사진 관리 · 짠! 월드컵</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;700;900&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+.guide{max-width:860px;margin:auto;padding:20px max(5vw,16px) 0}
+.guide ol{margin:0;padding-left:1.3em;display:grid;gap:8px}
+.guide code{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:1px 6px;font-size:14px}
+.pw{max-width:860px;margin:auto;padding:8px max(5vw,16px) 48px}
+.pw h3.cath{padding-left:0;padding-right:0}
+details.wc{background:var(--card);border:2px solid var(--line);border-left:6px solid var(--h);border-radius:16px;margin-top:10px}
+details.wc summary{cursor:pointer;list-style:none;display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:12px;align-items:center;padding:12px 14px;min-height:56px}
+details.wc summary::-webkit-details-marker{display:none}
+.wc summary .e{font-size:28px;text-align:center}.wc summary strong{display:block}.wc summary small{color:var(--mute)}
+.wc .st{font-weight:700;font-size:14px;color:var(--h);white-space:nowrap}
+.wc .in{padding:0 14px 14px;display:grid;gap:10px}
+.wc .acts{justify-content:flex-start}
+.wc .btn{min-height:44px;font-size:15px;text-decoration:none;display:inline-flex;align-items:center}
+.files{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));gap:8px}
+.files li{display:grid;grid-template-columns:48px minmax(0,1fr);gap:10px;align-items:center;border:1px solid var(--line);border-radius:12px;padding:6px 8px;font-size:14px}
+.files .th{width:48px;height:48px;border-radius:8px;background:var(--bg);display:grid;place-items:center;font-size:24px;overflow:hidden}
+.files .th img{width:100%;height:100%;object-fit:cover}
+.files .fn{overflow-wrap:anywhere}.files .ok{color:var(--soju);font-weight:700}.files .no{color:var(--mute)}
+</style>
+</head>
+<body>
+<header class="hero mini"><div><a class="back" href="./">← 짠! 월드컵 홈</a><h1>📷 사진 관리</h1><p>사진 파일 이름을 후보 이름으로 맞추고 월드컵 폴더에 한꺼번에 올리면, 게임에서 이모지 대신 사진이 나와요.</p></div></header>
+<div class="tent"></div>
+<section class="guide">
+  <h2 style="font-size:26px;margin-bottom:12px">올리는 방법</h2>
+  <ol>
+    <li>아래에서 월드컵을 열고 <b>파일 이름 목록 복사</b>를 눌러요. 사진 파일 이름을 후보 이름과 똑같이 바꿔 주세요. 예: <code>삼겹살.jpg</code></li>
+    <li><b>GitHub에 사진 올리기</b>를 누르면 그 월드컵 폴더(<code>img/월드컵id/</code>)의 업로드 화면이 열려요.</li>
+    <li>사진들을 한 번에 끌어다 놓고 <b>Commit changes</b>를 누르면 끝이에요. 1~2분 뒤 사이트에 반영돼요.</li>
+  </ol>
+  <p style="color:var(--mute);font-size:14px">jpg, png, webp 모두 돼요. 파일 이름에 쓸 수 없는 문자(\ / : * ? " &lt; &gt; |)는 빼고 적어요. 사진이 없는 후보는 이모지로 나와요. 직접 찍었거나 써도 되는 사진만 올려 주세요.</p>
+</section>
+<main class="pw" id="list"></main>
+<script src="data.js"></script>
+<script>
+{
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let owner='lgh4855',repo='jjan-worldcup';
+if(location.hostname.endsWith('.github.io')){owner=location.hostname.split('.')[0];repo=location.pathname.split('/').filter(Boolean)[0]||repo}
+const catOf=g=>CATS.some(c=>c.id===g.c)?g.c:'etc';
+$('#list').innerHTML=CATS.filter(c=>GENRES.some(g=>catOf(g)===c.id)).map(c=>`<h3 class="cath">${c.e} ${esc(c.n)}</h3>`+
+ GENRES.filter(g=>catOf(g)===c.id).map(g=>`<details class="wc" style="--h:${esc(g.h)}" data-id="${esc(g.id)}">
+  <summary><span class="e">${esc(g.e)}</span><span><strong>${esc(g.t)}</strong><small>폴더: img/${esc(g.id)}/ · 후보 ${g.items.length}개</small></span><span class="st">열어서 확인</span></summary>
+  <div class="in"><div class="acts"><button class="btn alt" data-copy>파일 이름 목록 복사</button><a class="btn go" target="_blank" rel="noopener" href="https://github.com/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/upload/main/img/${encodeURIComponent(g.id)}">GitHub에 사진 올리기 →</a></div>
+  <ul class="files">${g.items.map(it=>`<li data-pg="${esc(g.id)}" data-pn="${esc(it.n)}"><span class="th"><span class="em">${esc(it.e)}</span><img class="ph" alt=""></span><span><span class="fn">${esc(photoName(it.n))}.jpg</span><br><span class="no">사진 없음</span></span></li>`).join('')}</ul></div>
+ </details>`).join('')).join('');
+const checked=new Set();
+$('#list').addEventListener('toggle',e=>{
+ const d=e.target;if(!d.open||checked.has(d.dataset.id))return;checked.add(d.dataset.id);
+ const g=GENRES.find(x=>x.id===d.dataset.id),st=d.querySelector('.st');st.textContent='확인 중…';
+ Promise.all(g.items.map(it=>findPhoto(g.id,it.n))).then(r=>{
+  const n=r.filter(Boolean).length;st.textContent=`사진 ${n}/${g.items.length}`;
+  d.querySelectorAll('.files li').forEach((li,i)=>{if(r[i]){li.querySelector('img.ph').src=r[i];li.querySelector('.th').classList.add('hasph');const s=li.querySelector('.no');s.textContent='✓ 사진 있음';s.className='ok'}})});
+},true);
+$('#list').onclick=async e=>{
+ const b=e.target.closest('[data-copy]');if(!b)return;
+ const g=GENRES.find(x=>x.id===b.closest('details').dataset.id);
+ try{await navigator.clipboard.writeText(g.items.map(it=>photoName(it.n)).join('\n'));b.textContent='복사됨 ✓'}catch{b.textContent='복사 실패'}};
+}
+</script>
+</body>
+</html>

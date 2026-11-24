@@ -83,3 +83,18 @@ function genreBrowser(el,{onPick,customDesc='후보를 직접 적거나 친구�
   const b=e.target.closest('[data-id]');if(b)onPick(b.dataset.id)};
  draw();
 }
+
+// ---------- 후보 사진 ----------
+// img/<월드컵 id>/<후보 이름>.jpg (png, webp도 됨) 파일이 있으면 이모지 대신 사진을 보여줘요.
+// 파일 이름에 쓸 수 없는 문자(\ / : * ? " < > |)는 빼고 저장하세요.
+const PH_EXT=['jpg','png','webp','jpeg','JPG','PNG','JPEG'],PH={};
+const photoName=n=>String(n).replace(/[\\/:*?"<>|]/g,'').trim();
+const photoBase=(gid,n)=>`img/${encodeURIComponent(gid)}/${encodeURIComponent(photoName(n))}`;
+function findPhoto(gid,n){
+ const k=gid+'\n'+n;if(PH[k])return PH[k];
+ return PH[k]=new Promise(res=>{let i=0;const im=new Image();
+  const next=()=>{if(i>=PH_EXT.length)return res(null);const u=photoBase(gid,n)+'.'+PH_EXT[i++];im.onload=()=>res(u);im.onerror=next;im.src=u};next()})}
+// data-pg(월드컵 id)와 data-pn(후보 이름)이 붙은 요소 안의 img.ph에 사진을 채워요
+function loadPhotos(root){
+ for(const el of root.querySelectorAll('[data-pg]')){const gid=el.dataset.pg;if(!gid||gid==='custom')continue;
+  findPhoto(gid,el.dataset.pn).then(u=>{const im=el.querySelector('img.ph');if(!u||!im)return;im.src=u;el.classList.add('hasph')})}}
