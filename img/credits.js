@@ -1305,5 +1305,81 @@ const CREDITS={
    "lic": "CC BY-SA 3.0",
    "url": "https://commons.wikimedia.org/wiki/File:Yeouido_Hangang_Park_seen_from_Dangsan_Railway_Bridge.jpg"
   }
+ },
+ "icecream": {
+  "돼지바": {
+   "t": "돼지바.jpg",
+   "by": "LR0725",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:%EB%8F%BC%EC%A7%80%EB%B0%94.jpg"
+  },
+  "메로나": {
+   "t": "Melona.jpg",
+   "by": "Hyeon-Jeong Suk",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Melona.jpg"
+  },
+  "수박바": {
+   "t": "Watermelon Bar 001.jpg",
+   "by": "Ocdp",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Watermelon_Bar_001.jpg"
+  }
+ },
+ "retro": {
+  "CD플레이어": {
+   "t": "Sony-Discman-D-E307CK.jpg",
+   "by": "Mikus",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Sony-Discman-D-E307CK.jpg"
+  },
+  "MP3 플레이어": {
+   "t": "IRiver Clix 2GB MP3 Player.jpg",
+   "by": "Matt Burris",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:IRiver_Clix_2GB_MP3_Player.jpg"
+  },
+  "게임보이": {
+   "t": "Game Boy.jpg",
+   "by": "PiaCarrot",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Game_Boy.jpg"
+  },
+  "롤러블레이드": {
+   "t": "TRUE Inline Hockey Skates-IMG 5253-pair-FRD.png",
+   "by": "Fred Hsu on en.wikipedia",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:TRUE_Inline_Hockey_Skates-IMG_5253-pair-FRD.png"
+  },
+  "비디오 대여점": {
+   "t": "VHS Tapes on Library Shelves.JPG",
+   "by": "ParentingPatch",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:VHS_Tapes_on_Library_Shelves.JPG"
+  },
+  "삐삐": {
+   "t": "Beeper Motorola Bravo Express - CTC Chile - 1.jpg",
+   "by": "Jorgebarrios",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Beeper_Motorola_Bravo_Express_-_CTC_Chile_-_1.jpg"
+  },
+  "손편지": {
+   "t": "Emily Dickinson´s letter about her love.jpg",
+   "by": "",
+   "lic": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Emily_Dickinson%C2%B4s_letter_about_her_love.jpg"
+  },
+  "오락실": {
+   "t": "Video arcade games at Wikimania 2017 afterparty.jpg",
+   "by": "Daniel Case",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Video_arcade_games_at_Wikimania_2017_afterparty.jpg"
+  },
+  "폴더폰": {
+   "t": "Samsung flip phone, Bunde (2019) 01.jpg",
+   "by": "Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia Commons - ©",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Samsung_flip_phone,_Bunde_(2019)_01.jpg"
+  }
  }
 };
