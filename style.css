@@ -151,3 +151,21 @@ input[type=text]{width:100%;font-size:16px;padding:12px;border-radius:14px;borde
 .cath{max-width:1240px;margin:auto;padding:22px max(5vw,16px) 0;font-size:22px}
 .gb .grid{padding-top:12px;padding-bottom:4px}
 .gb{padding-bottom:40px}
+/* ---------- 카테고리 2단계 ---------- */
+.sbox{max-width:1240px;margin:auto;padding:16px max(5vw,16px) 0}
+.sbox input{width:100%;font-size:16px;padding:12px 16px;border-radius:999px;border:2px solid var(--line);background:var(--card);color:var(--ink)}
+.catc .inc{color:var(--h);font-weight:700;font-size:13px}
+.cathead{max-width:1240px;margin:16px auto 0;padding:0 max(5vw,16px)}
+.cathead>*{margin:0}
+.cathead h2{font-size:clamp(30px,6vw,44px);color:var(--h);margin:8px 0 4px}
+.cathead p{color:var(--mute)}
+.back2{font-weight:700;color:var(--mute);padding:0}
+.wlist{list-style:none;max-width:860px;margin:0 auto;padding:14px max(5vw,16px) 0;display:grid;gap:10px}
+.wrow{width:100%;display:grid;grid-template-columns:2em 56px minmax(0,1fr) auto;gap:12px;align-items:center;text-align:left;background:var(--card);border:2px solid var(--line);border-left:6px solid var(--h);border-radius:16px;padding:10px 14px;transition:transform .15s}
+.wrow:hover{transform:translateX(4px)}
+.wrow b{font:22px "Black Han Sans",sans-serif;color:var(--h);text-align:center}
+.wrow .em{font-size:32px;width:56px;height:56px;display:grid;place-items:center;border-radius:14px;background:color-mix(in srgb,var(--h) 16%,transparent)}
+.wrow strong{display:block;font-size:17px}.wrow small{display:block;color:var(--mute);font-size:13px}
+.wrow .n{font-weight:700;font-size:13px;color:var(--h);white-space:nowrap}
+.none{text-align:center;color:var(--mute);padding:24px}
+@media(max-width:600px){.wrow{grid-template-columns:1.4em 44px minmax(0,1fr) auto;gap:10px}.wrow .em{width:44px;height:44px;font-size:26px}}

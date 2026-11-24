@@ -2,12 +2,13 @@
 // 새 월드컵: RAW에 {id, c(카테고리 id), t(제목), d(한 줄 설명), h(색), e(이모지), L(후보)} 블록 추가
 // 후보 L은 "이모지 이름"을 쉼표로 구분. 후보 수는 16·32·64처럼 2의 거듭제곱이 좋아요.
 const CATS=[
- {id:'drink',n:'술자리 필수',e:'🍻'},
- {id:'food',n:'먹을 거',e:'🍕'},
- {id:'love',n:'연애 토크',e:'💘'},
- {id:'imagine',n:'상상·밸런스',e:'🌀'},
- {id:'trip',n:'여행·추억',e:'✈️'},
- {id:'etc',n:'기타',e:'📦'}
+ {id:'drink',n:'술자리 월드컵',e:'🍻',h:'#ff5a1f',d:'오늘 밤 마실 것, 먹을 것, 할 게임'},
+ {id:'food',n:'먹방 월드컵',e:'🍕',h:'#e0a100',d:'배고플 때 고르는 원픽'},
+ {id:'love',n:'연애 월드컵',e:'💘',h:'#e8336e',d:'이상형부터 데이트 코스까지'},
+ {id:'imagine',n:'상상·밸런스 월드컵',e:'🌀',h:'#5b4bd6',d:'만약에… 둘 중 하나라면?'},
+ {id:'trip',n:'여행 월드컵',e:'✈️',h:'#2b7bd6',d:'당장 떠나고 싶은 곳'},
+ {id:'memory',n:'추억 소환 월드컵',e:'📼',h:'#c2185b',d:'그 시절 우리가 좋아했던 것들'},
+ {id:'etc',n:'기타 월드컵',e:'📦',h:'#6d6d6d',d:'아직 분류되지 않은 월드컵'}
 ];
 const RAW=[
 {id:'anju',c:'drink',t:'술안주 월드컵',d:'오늘 밤 최고의 안주는?',h:'#ff5a1f',e:'🍢',
@@ -30,8 +31,10 @@ const RAW=[
  L:'🎬 영화관,🎢 놀이공원,☕ 감성 카페,🍷 와인바,🏞️ 한강 피크닉,🎳 볼링장,🎤 코인노래방,🖼️ 전시회,🏕️ 캠핑,🍜 포장마차,🛍️ 쇼핑몰,🎮 PC방,🚴 자전거 타기,🌊 바다 드라이브,🧩 방탈출,🐠 아쿠아리움'},
 {id:'conv',c:'food',t:'편의점 간식 월드컵',d:'만 원으로 고르는 원픽',h:'#ff8c00',e:'🏪',
  L:'🍙 삼각김밥,🍜 컵라면,🌭 핫바,🍫 초콜릿,🍦 아이스크림,🥤 탄산음료,🥛 바나나우유,🍮 푸딩,🥪 샌드위치,🍱 도시락,🍞 크림빵,🍟 감자칩,🍬 젤리,🧃 과일주스,🥟 군만두,☕ 캔커피'},
-{id:'retro',c:'trip',t:'추억 소환 월드컵',d:'그 시절 최고는?',h:'#c2185b',e:'📼',
+{id:'retro',c:'memory',t:'1990~2000년 유행 월드컵',d:'그 시절 우리가 빠졌던 것',h:'#c2185b',e:'📼',
  L:'📟 삐삐,📱 폴더폰,💿 MP3 플레이어,🎮 게임보이,🕹️ 오락실,📼 비디오 대여점,🖥️ 싸이월드,💬 버디버디,🍬 불량식품,🃏 딱지치기,🎴 포켓몬 띠부씰,📺 토요일 아침 만화,🎧 CD플레이어,🚲 롤러블레이드,🍦 50원 아이스크림,💌 손편지'},
+{id:'icecream',c:'memory',t:'추억의 아이스크림 월드컵',d:'동네 슈퍼 냉동고 앞에서 고민하던 그 맛',h:'#4fa3e0',e:'🍦',
+ L:'🍈 메로나,🫘 비비빅,🦈 죠스바,🍉 수박바,🐷 돼지바,🍦 월드콘,🍨 브라보콘,🐟 붕어싸만코,🎺 빵빠레,🧊 폴라포,🍫 쌍쌍바,🥜 누가바,🌰 바밤바,🍬 빠삐코,🌀 스크류바,🏹 더위사냥'},
 {id:'game',c:'drink',t:'술게임 월드컵',d:'오늘 할 술게임 정하기',h:'#d32f2f',e:'🎲',
  L:'🎲 베스킨라빈스 31,🗣️ 고백점프,🐰 바니바니,🥢 젓가락 게임,🎵 아파트 게임,🔤 초성 게임,👑 왕게임,🧠 딸기당근수박,🎯 눈치게임,🍺 병뚜껑 날리기,🃏 손병호 게임,🎤 노래 제목 맞추기,🖐️ 지목 게임,🔢 369,🤫 007빵,🐍 훈민정음'}
 ];
@@ -39,22 +42,31 @@ function p(s){const i=s.indexOf(' ');return{e:s.slice(0,i),n:s.slice(i+1)}}
 const GENRES=RAW.map(g=>({...g,items:g.L.split(',').map(p)}));
 const MISSIONS=['왼쪽 사람과 러브샷 🥂','가장 최근 카톡 한 줄 읽기, 싫으면 한 잔','다 같이 건배! 한 잔씩 🍻','지금 제일 조용한 사람이 다음 경기 선택권 독점','이번 경기 진 후보를 고른 사람, 그 후보 성대모사','오른쪽 사람에게 칭찬 3개, 못하면 한 잔','한 잔 쉬어가기 — 물 한 컵씩 💧','가위바위보 꼴찌가 다음 잔 따르기','이번 판은 패자가 아니라 승자 쪽이 마신다!','막내가 건배사 하기'];
 
-// 카테고리 칩 + 카테고리별 월드컵 카드 (홈과 방장 화면에서 같이 씀)
+// 큰 카테고리 카드 → 누르면 그 안의 월드컵 목록 (홈과 방장 화면에서 같이 씀)
 function genreBrowser(el,{onPick,customDesc='후보를 직접 적거나 친구들 사진을 넣어서'}){
  const E=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const catOf=g=>CATS.some(c=>c.id===g.c)?g.c:'etc';
- let cur='all';try{cur=localStorage.getItem('jj-cat')||'all'}catch{}
- if(cur!=='all'&&!GENRES.some(g=>catOf(g)===cur))cur='all';
- const card=g=>`<button class="g" style="--h:${E(g.h)}" data-id="${E(g.id)}"><span class="n">${g.items.length}강</span><span class="em">${E(g.e)}</span><h3>${E(g.t)}</h3><p>${E(g.d)}</p></button>`;
- const draw=()=>{
-  const used=CATS.filter(c=>GENRES.some(g=>catOf(g)===c.id));
-  const chips=[{id:'all',n:'전체',e:'✨',k:GENRES.length},...used.map(c=>({...c,k:GENRES.filter(g=>catOf(g)===c.id).length}))]
-   .map(c=>`<button class="cat${c.id===cur?' on':''}" data-c="${c.id}" aria-pressed="${c.id===cur}">${c.e} ${E(c.n)} <small>${c.k}</small></button>`).join('');
-  const groups=(cur==='all'?used:used.filter(c=>c.id===cur)).map(c=>`<h3 class="cath">${c.e} ${E(c.n)}</h3><div class="grid">${GENRES.filter(g=>catOf(g)===c.id).map(card).join('')}</div>`).join('');
-  el.innerHTML=`<div class="cats scroll">${chips}</div>${groups}<h3 class="cath">✏️ 직접 만들기</h3><div class="grid"><button class="g custom" data-id="custom"><span class="em">✏️</span><h3>나만의 월드컵</h3><p>${E(customDesc)}</p></button></div>`;
- };
+ let open=null,q='';
  el.classList.add('gb');
- el.onclick=e=>{const c=e.target.closest('[data-c]');if(c){cur=c.dataset.c;try{localStorage.setItem('jj-cat',cur)}catch{}draw();const on=el.querySelector('.cat.on');if(on)el.querySelector('.cats').scrollLeft=on.offsetLeft-24;return}
-  const b=e.target.closest('.g');if(b)onPick(b.dataset.id)};
+ el.innerHTML=`<div class="sbox"><input type="search" placeholder="🔍 월드컵·후보 검색 (예: 치킨, 메로나)" aria-label="월드컵 검색"></div><div class="gbody"></div>`;
+ const inp=el.querySelector('input'),body=el.querySelector('.gbody');
+ const row=(g,i)=>`<li><button class="wrow" style="--h:${E(g.h)}" data-id="${E(g.id)}"><b>${i+1}</b><span class="em">${E(g.e)}</span><span class="tx"><strong>${E(g.t)}</strong><small>${E(g.d)}</small></span><span class="n">${g.items.length}강</span></button></li>`;
+ const draw=()=>{
+  el.querySelector('.sbox').classList.toggle('hide',!!open);
+  if(open){const c=CATS.find(x=>x.id===open),gs=GENRES.filter(g=>catOf(g)===open);
+   body.innerHTML=`<div class="cathead" style="--h:${E(c.h)}"><button class="back2" data-back>← 전체 카테고리</button><h2>${c.e} ${E(c.n)}</h2><p>${E(c.d)} · 월드컵 ${gs.length}개</p></div><ol class="wlist">${gs.map(row).join('')}</ol>`;return}
+  if(q){const k=q.toLowerCase(),hits=GENRES.filter(g=>(g.t+' '+g.d+' '+g.items.map(x=>x.n).join(' ')).toLowerCase().includes(k));
+   body.innerHTML=`<ol class="wlist">${hits.map(row).join('')||'<li class="none">검색 결과가 없어요</li>'}</ol>`;return}
+  const used=CATS.filter(c=>GENRES.some(g=>catOf(g)===c.id));
+  body.innerHTML=`<div class="grid">${used.map(c=>{const gs=GENRES.filter(g=>catOf(g)===c.id);
+   return `<button class="g catc" style="--h:${E(c.h)}" data-cat="${c.id}"><span class="n">월드컵 ${gs.length}개</span><span class="em">${c.e}</span><h3>${E(c.n)}</h3><p>${E(c.d)}</p><p class="inc">${gs.slice(0,3).map(g=>E(g.t.replace(/ 월드컵$/,''))).join(' · ')}${gs.length>3?' 외':''}</p></button>`}).join('')}
+   <button class="g custom" data-id="custom"><span class="em">✏️</span><h3>나만의 월드컵</h3><p>${E(customDesc)}</p></button></div>`;
+ };
+ const top=()=>{const y=el.getBoundingClientRect().top+scrollY-8;if(scrollY>y)scrollTo(0,y)};
+ inp.oninput=()=>{q=inp.value.trim();draw()};
+ el.onclick=e=>{
+  if(e.target.closest('[data-back]')){open=null;draw();top();return}
+  const c=e.target.closest('[data-cat]');if(c){open=c.dataset.cat;draw();top();return}
+  const b=e.target.closest('[data-id]');if(b)onPick(b.dataset.id)};
  draw();
 }
