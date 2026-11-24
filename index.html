@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>짠! 월드컵</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;700;900&display=swap">
+<style>
+/*
+VOICE: 포장마차 플라스틱 테이블 위에서 큰 소리로 하는 게임. 시끄럽고 따뜻하게.
+IDEA: 주황 포차 천막 + 초록 소주병 라벨. 매치 화면은 테이블 위 두 장의 메뉴판.
+PICTURE: 대결 화면의 큰 카드 두 장이 그림 자체. 홈은 천막 줄무늬 + 소주병 일러스트.
+COLOUR and TYPE: 천막 주황 #ff5a1f, 소주병 초록 #0f7a4a, 노란 전구 #ffd23f. Black Han Sans + Noto Sans KR.
+LAYOUT: 홈은 장르 카드 그리드, 경기는 전체 화면 2분할(폰에선 위아래).
+*/
+:root{color-scheme:light dark;--bg:light-dark(#fff8ef,#1b1410);--card:light-dark(#ffffff,#2a201a);--ink:light-dark(#22140c,#fff3e6);--mute:light-dark(#7a6656,#c4ab95);--line:light-dark(#f0dcc6,#3d2e24);--tent:#ff5a1f;--soju:#0f7a4a;--bulb:#ffd23f}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Noto Sans KR",system-ui,sans-serif;overflow-x:clip;-webkit-tap-highlight-color:transparent}
+h1,h2,h3,.disp{font-family:"Black Han Sans","Noto Sans KR",sans-serif;font-weight:400;line-height:1.05;margin:0;text-wrap:balance}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none;min-height:44px}
+button:focus-visible,textarea:focus-visible,input:focus-visible,label:focus-within{outline:3px solid var(--bulb);outline-offset:2px}
+.hide{display:none!important}
+.tent{height:34px;background:repeating-linear-gradient(90deg,var(--tent) 0 48px,#fff 48px 96px);-webkit-mask:radial-gradient(24px at 24px 10px,#000 98%,#0000) 0 0/48px 100% repeat-x,linear-gradient(#000 0 0) top/100% 10px no-repeat;mask:radial-gradient(24px at 24px 10px,#000 98%,#0000) 0 0/48px 100% repeat-x,linear-gradient(#000 0 0) top/100% 10px no-repeat}
+.hero{background:var(--tent);color:#fff;padding:clamp(24px,4vw,48px) max(5vw,16px) 8px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:end}
+.hero h1{font-size:clamp(44px,8vw,84px)}
+.hero p{margin:10px 0 0;font-size:17px;max-width:34em;opacity:.95}
+.hero svg{width:clamp(90px,16vw,170px);height:auto;display:block}
+.bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:20px max(5vw,16px) 0;max-width:1240px;margin:auto}
+.party{display:flex;gap:12px;align-items:center;background:var(--card);border:2px solid var(--line);border-radius:999px;padding:6px 18px 6px 8px;cursor:pointer;font-weight:700}
+.party input{appearance:none;width:52px;height:30px;border-radius:99px;background:var(--line);position:relative;margin:0;cursor:pointer;transition:.2s}
+.party input::after{content:"";position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:#fff;box-shadow:0 1px 3px #0004;transition:.2s}
+.party input:checked{background:var(--soju)}.party input:checked::after{left:25px}
+.party small{display:block;font-weight:400;color:var(--mute);font-size:13px;line-height:1.3}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:16px;padding:20px max(5vw,16px) 48px;max-width:1240px;margin:auto}
+.g{position:relative;text-align:left;background:var(--card);border:2px solid var(--line);border-radius:20px;padding:18px 18px 16px;display:grid;gap:6px;overflow:hidden;transition:transform .15s,border-color .15s}
+.g:hover{transform:translateY(-3px);border-color:var(--h)}
+.g .em{font-size:44px;line-height:1;width:72px;height:72px;display:grid;place-items:center;border-radius:18px;background:color-mix(in srgb,var(--h) 18%,transparent)}
+.g h3{font-size:24px;margin-top:6px}
+.g p{margin:0;color:var(--mute);font-size:14px}
+.g .n{position:absolute;top:16px;right:16px;font-size:13px;font-weight:700;color:var(--h)}
+.g.custom{border-style:dashed;--h:var(--soju)}
+footer{text-align:center;color:var(--mute);font-size:13px;padding:0 16px 32px}
+/* match */
+#play{position:fixed;inset:0;display:grid;grid-template-rows:auto 1fr auto;background:var(--bg);z-index:5}
+.top{display:flex;align-items:center;gap:8px;padding:10px max(3vw,12px);background:var(--tent);color:#fff}
+.top h2{font-size:clamp(20px,3vw,28px);flex:1;text-align:center}
+.top button{padding:0 14px;border-radius:12px;background:#0002;font-weight:700;font-size:15px}
+.top button:disabled{opacity:.4}
+.prog{height:6px;background:#0002}.prog i{display:block;height:100%;background:var(--bulb);transition:width .3s}
+.arena{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(10px,2vw,24px);padding:clamp(10px,2vw,24px);min-height:0}
+.c{position:relative;border-radius:24px;display:grid;place-items:center;align-content:center;gap:12px;padding:20px;color:#fff;overflow:hidden;box-shadow:0 10px 0 #0002;transition:transform .25s,opacity .25s,filter .25s}
+.c:nth-child(1){background:linear-gradient(160deg,var(--tent),#d43a0c)}
+.c:nth-child(2){background:linear-gradient(160deg,#16975d,var(--soju))}
+.c:hover{transform:scale(1.015)}
+.c .em{font-size:clamp(70px,15vmin,170px);line-height:1;filter:drop-shadow(0 6px 0 #0003)}
+.c .nm{font-family:"Black Han Sans",sans-serif;font-size:clamp(28px,5vmin,54px);line-height:1.1;text-align:center;text-wrap:balance}
+.c img{width:min(100%,520px);max-height:52vh;object-fit:cover;border-radius:16px;border:4px solid #fff}
+.c.win{transform:scale(1.04)}.c.lose{opacity:.25;filter:grayscale(1)}
+.vs{position:absolute;left:50%;top:50%;translate:-50% -50%;width:74px;height:74px;border-radius:50%;background:var(--bulb);color:#22140c;display:grid;place-items:center;font:30px "Black Han Sans",sans-serif;box-shadow:0 0 0 6px var(--bg);pointer-events:none;z-index:2}
+.foot{display:flex;justify-content:center;gap:10px;padding:0 12px 14px;flex-wrap:wrap}
+.btn{padding:10px 22px;border-radius:999px;background:var(--ink);color:var(--bg);font-weight:900}
+.btn.alt{background:var(--card);color:var(--ink);border:2px solid var(--line)}
+.btn.go{background:var(--bulb);color:#22140c}
+/* overlays */
+.ov{position:fixed;inset:0;z-index:20;display:grid;place-items:center;padding:16px;background:#1b1410cc;backdrop-filter:blur(3px)}
+.box{background:var(--card);border-radius:24px;padding:clamp(20px,4vw,32px);width:min(100%,520px);max-height:92vh;overflow:auto;display:grid;gap:14px}
+.box h2{font-size:30px}.box p{margin:0;color:var(--mute)}
+.sizes{display:flex;flex-wrap:wrap;gap:10px}
+.sizes button{flex:1 1 90px;border-radius:16px;border:2px solid var(--line);font:24px "Black Han Sans",sans-serif;padding:12px}
+.sizes button:hover{border-color:var(--tent);color:var(--tent)}
+.count{font:clamp(120px,30vw,240px) "Black Han Sans",sans-serif;color:var(--bulb);text-align:center;animation:pop .6s}
+@keyframes pop{from{transform:scale(1.8);opacity:0}}
+.toast{position:fixed;left:50%;bottom:84px;translate:-50% 0;background:var(--bulb);color:#22140c;font-weight:900;padding:12px 22px;border-radius:16px;z-index:15;box-shadow:0 6px 20px #0004;text-align:center;max-width:92vw;animation:pop .3s}
+.mission{background:var(--soju);color:#fff;text-align:center}
+.mission p{color:#fff;font-size:22px;font-weight:700}
+.mission .tag{font:16px "Black Han Sans";color:var(--bulb)}
+/* result */
+#result{position:fixed;inset:0;overflow:auto;z-index:6;background:var(--bg)}
+.crown{background:var(--tent);color:#fff;text-align:center;padding:24px 16px 32px}
+.crown .em{font-size:clamp(90px,20vw,160px);line-height:1.1}
+.crown img{width:min(80vw,320px);aspect-ratio:1;object-fit:cover;border-radius:24px;border:6px solid #fff}
+.crown h2{font-size:clamp(40px,8vw,72px);margin-top:8px}
+.crown .sub{font-weight:700;color:var(--bulb);margin-bottom:6px}
+.res{max-width:760px;margin:auto;padding:24px 16px 48px;display:grid;gap:22px}
+.res h3{font-size:22px;margin-bottom:8px}
+.path{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.path li{display:flex;gap:10px;align-items:center;background:var(--card);border:2px solid var(--line);border-radius:14px;padding:8px 14px}
+.path b{min-width:3.4em;color:var(--tent)}
+.rank{display:grid;gap:6px}
+.rank div{display:grid;grid-template-columns:2em minmax(0,9em) minmax(0,1fr) 2.6em;gap:8px;align-items:center;font-size:15px}
+.rank span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rank i{height:14px;border-radius:7px;background:var(--soju);display:block}
+.rank em{font-style:normal;text-align:right;color:var(--mute)}
+.acts{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+textarea{width:100%;min-height:180px;font:16px/1.5 inherit;padding:12px;border-radius:14px;border:2px solid var(--line);background:var(--bg);color:var(--ink);resize:vertical}
+input[type=text]{width:100%;font-size:16px;padding:12px;border-radius:14px;border:2px solid var(--line);background:var(--bg);color:var(--ink)}
+.file{display:block;border:2px dashed var(--line);border-radius:14px;padding:12px;text-align:center;cursor:pointer;color:var(--mute)}
+.file input{display:none}
+.err{color:var(--tent)!important;font-weight:700}
+@media(max-width:600px),(orientation:portrait) and (max-width:900px){
+ .arena{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) minmax(0,1fr)}
+ .c img{max-height:24vh}
+ .vs{width:58px;height:58px;font-size:24px}
+}
+@media(max-width:600px){.hero{grid-template-columns:minmax(0,1fr)}.hero svg{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="home">
+  <header class="hero">
+    <div>
+      <h1>짠! 월드컵</h1>
+      <p>둘 중 하나만 살아남는다. 술자리에서 다 같이 "하나, 둘, 셋!" 하고 동시에 가리키고, 소수파는 한 잔.</p>
+    </div>
+    <svg viewBox="0 0 120 220" aria-hidden="true">
+      <rect x="44" y="6" width="32" height="20" rx="4" fill="#0b5a37"/>
+      <path d="M48 26h24v34c0 10 22 20 22 44v100c0 8-6 12-14 12H40c-8 0-14-4-14-12V104c0-24 22-34 22-44z" fill="#16975d"/>
+      <path d="M48 26h8v34c0 10-22 20-22 44v100c0 6 2 10 8 11-6 0-12-4-12-11V104c0-24 18-34 18-44z" fill="#ffffff44"/>
+      <rect x="26" y="118" width="68" height="60" fill="#fff"/>
+      <text x="60" y="156" text-anchor="middle" font-family="Black Han Sans" font-size="26" fill="#0f7a4a">짠!</text>
+      <circle cx="98" cy="40" r="8" fill="#ffd23f"/><circle cx="14" cy="70" r="5" fill="#ffd23f"/>
+    </svg>
+  </header>
+  <div class="tent"></div>
+  <div class="bar">
+    <label class="party"><input type="checkbox" id="partyT"> <span>술자리 모드<small>카운트다운 · 소수파 벌주 · 랜덤 미션</small></span></label>
+    <span style="color:var(--mute);font-size:14px" id="cnt"></span>
+  </div>
+  <main class="grid" id="grid"></main>
+  <footer>후보는 텍스트와 이모지로 되어 있어요. "나만의 월드컵"에서 친구들 사진이나 원하는 후보로 직접 만들 수 있어요.</footer>
+</div>
+
+<section id="play" class="hide">
+  <div>
+    <div class="top">
+      <button id="quit" aria-label="처음으로">✕ 그만</button>
+      <h2 id="rlabel"></h2>
+      <button id="undo">↶ 되돌리기</button>
+    </div>
+    <div class="prog"><i id="pbar"></i></div>
+  </div>
+  <div class="arena" id="arena"></div>
+  <div class="foot" id="foot"><button class="btn go" id="cdBtn">하나, 둘, 셋! 🍻</button></div>
+</section>
+
+<section id="result" class="hide"></section>
+<div id="ov" class="ov hide"></div>
+
+<script>
+{
+const RAW=[
+{id:'anju',t:'술안주 월드컵',d:'오늘 밤 최고의 안주는?',h:'#ff5a1f',e:'🍢',
+ L:'🍗 후라이드 치킨,🌶️ 양념치킨,🥓 삼겹살,🐄 소곱창,🐙 낙지볶음,🥘 김치찌개,🍲 부대찌개,🐟 회 한 접시,🦑 오징어 땅콩,🍳 계란말이,🥟 군만두,🌭 소시지 야채볶음,🧀 치즈 나쵸,🍤 새우튀김,🐚 골뱅이무침,🥩 육회,🦐 새우깡,🌽 콘치즈,🍜 짬뽕탕,🐔 닭발,🐷 족발,🐖 보쌈,🥬 파전,🦪 굴전,🍢 어묵탕,🍟 감자튀김,🐌 번데기탕,🥜 땅콩,🍉 수박,🦀 간장게장,🫕 마라탕,🐟 노가리'},
+{id:'sul',t:'술 월드컵',d:'한 병만 마실 수 있다면',h:'#0f7a4a',e:'🍶',
+ L:'🍶 소주,🍺 생맥주,🍾 샴페인,🍷 레드와인,🥂 화이트와인,🍶 막걸리,🥃 위스키 하이볼,🍸 진토닉,🍹 모히또,🍶 사케,🍋 레몬 소주,🍑 복숭아 소주,🍺 흑맥주,🥃 데킬라 샷,🍻 소맥,🍶 복분자주'},
+{id:'yasik',t:'야식 월드컵',d:'새벽 1시, 배달앱을 열었다',h:'#e0a100',e:'🍕',
+ L:'🍕 피자,🍗 치킨,🍔 햄버거,🍜 라면,🍝 떡볶이,🌯 타코,🍱 돈까스,🍣 초밥,🍛 카레,🥟 만두,🍲 순댓국,🍖 양꼬치,🌮 부리또,🥪 샌드위치,🍳 토스트,🍚 김밥,🍜 쌀국수,🥡 짜장면,🦞 랍스터,🥩 스테이크,🌶️ 마라샹궈,🥘 감자탕,🍤 텐동,🐙 타코야끼,🍢 꼬치,🧆 팔라펠,🍦 아이스크림,🧇 와플,🍩 도넛,🥐 크루아상,🍙 주먹밥,🍜 칼국수'},
+{id:'trip',t:'여행지 월드컵',d:'내일 당장 떠난다면',h:'#2b7bd6',e:'✈️',
+ L:'🗼 파리,🗽 뉴욕,🏯 교토,🗻 후지산,🏝️ 발리,🌴 하와이,🏰 프라하,🎡 런던,🕌 이스탄불,🏜️ 두바이,🍝 로마,🌊 산토리니,🧊 아이슬란드,🦘 시드니,🐘 방콕,🍜 다낭,🏔️ 스위스,🌸 오사카,🍊 제주도,🌆 홍콩,🍷 바르셀로나,🐧 남극,🌋 하노이,🎰 라스베이거스,🌅 몰디브,🦁 케냐 사파리,🏛️ 아테네,🌲 캐나다 로키,🚂 시베리아 횡단열차,🗿 이스터섬,🌌 몽골 초원,🐚 부산'},
+{id:'worst',t:'최악의 상황 월드컵',d:'더 싫은 쪽을 고르세요',h:'#8a2be2',e:'😱',
+ L:'📱 폰 배터리 1%,🚽 화장실 휴지 없음,💸 월급 통장 0원,🦟 모기 한 마리와 밤새기,🧦 젖은 양말로 하루,🗣️ 단톡방에 잘못 보낸 뒷담,⏰ 알람 못 듣고 지각,🍜 라면 물 조절 실패,🎤 회식 노래방 첫 곡,🚇 지하철 문 앞에서 놓침,🔑 집 열쇠 잃어버림,🍺 김빠진 맥주,💻 저장 안 한 과제 날아감,🧊 한겨울 보일러 고장,🛍️ 산 다음날 세일,📞 전 애인한테 전화 걸림'},
+{id:'ideal',t:'이상형 조건 월드컵',d:'포기할 수 없는 단 하나',h:'#e8336e',e:'💘',
+ L:'😂 웃긴 사람,🍳 요리 잘하는 사람,💪 운동하는 사람,📚 똑똑한 사람,💰 돈 잘 버는 사람,🎨 감성 있는 사람,🐶 동물 좋아하는 사람,✈️ 여행 좋아하는 사람,🗣️ 대화 잘 통하는 사람,💌 연락 잘하는 사람,🍷 술 잘 마시는 사람,🧘 화 안 내는 사람,🎸 악기 다루는 사람,👔 옷 잘 입는 사람,🏠 집순이·집돌이,🚗 운전 잘하는 사람,🧹 깔끔한 사람,🎮 게임 같이 하는 사람,🌅 아침형 인간,🦉 밤 새는 올빼미,📷 사진 잘 찍어주는 사람,🎁 기념일 챙기는 사람,👨‍👩‍👧 가족 같은 사람,😇 착한 사람,🔥 열정 넘치는 사람,🧊 쿨한 사람,🗺️ 계획 세우는 J,🌀 즉흥적인 P,🎤 노래 잘하는 사람,🍰 디저트 맛집 아는 사람,🤝 친구 많은 사람,🐢 느긋한 사람'},
+{id:'power',t:'초능력 월드컵',d:'하나만 가질 수 있다',h:'#1f4fd1',e:'⚡',
+ L:'🕊️ 하늘을 날기,👻 투명인간,⏳ 시간 정지,🚪 순간이동,🧠 독심술,🔮 미래 예지,💪 괴력,🧬 불로불사,🗣️ 모든 언어 구사,🐾 동물과 대화,😴 잠 안 자도 멀쩡,🍺 절대 안 취하기,💸 돈 복사,🔁 하루 되돌리기,🌦️ 날씨 조종,🩹 치유 능력'},
+{id:'animal',t:'다시 태어난다면 월드컵',d:'다음 생엔 이 동물로',h:'#6b8e23',e:'🐾',
+ L:'🐱 부잣집 고양이,🐶 대형견,🐼 판다,🦁 사자,🐬 돌고래,🦅 독수리,🐨 코알라,🐧 펭귄,🐢 거북이,🦥 나무늘보,🐋 고래,🦊 여우,🦦 수달,🐹 햄스터,🦄 유니콘,🐉 용'},
+{id:'date',t:'데이트 코스 월드컵',d:'첫 데이트로 간다면',h:'#ff7aa8',e:'💑',
+ L:'🎬 영화관,🎢 놀이공원,☕ 감성 카페,🍷 와인바,🏞️ 한강 피크닉,🎳 볼링장,🎤 코인노래방,🖼️ 전시회,🏕️ 캠핑,🍜 포장마차,🛍️ 쇼핑몰,🎮 PC방,🚴 자전거 타기,🌊 바다 드라이브,🧩 방탈출,🐠 아쿠아리움'},
+{id:'conv',t:'편의점 간식 월드컵',d:'만 원으로 고르는 원픽',h:'#ff8c00',e:'🏪',
+ L:'🍙 삼각김밥,🍜 컵라면,🌭 핫바,🍫 초콜릿,🍦 아이스크림,🥤 탄산음료,🥛 바나나우유,🍮 푸딩,🥪 샌드위치,🍱 도시락,🍞 크림빵,🍟 감자칩,🍬 젤리,🧃 과일주스,🥟 군만두,☕ 캔커피'},
+{id:'retro',t:'추억 소환 월드컵',d:'그 시절 최고는?',h:'#c2185b',e:'📼',
+ L:'📟 삐삐,📱 폴더폰,💿 MP3 플레이어,🎮 게임보이,🕹️ 오락실,📼 비디오 대여점,🖥️ 싸이월드,💬 버디버디,🍬 불량식품,🃏 딱지치기,🎴 포켓몬 띠부씰,📺 토요일 아침 만화,🎧 CD플레이어,🚲 롤러블레이드,🍦 50원 아이스크림,💌 손편지'},
+{id:'game',t:'술게임 월드컵',d:'오늘 할 술게임 정하기',h:'#d32f2f',e:'🎲',
+ L:'🎲 베스킨라빈스 31,🗣️ 고백점프,🐰 바니바니,🥢 젓가락 게임,🎵 아파트 게임,🔤 초성 게임,👑 왕게임,🧠 딸기당근수박,🎯 눈치게임,🍺 병뚜껑 날리기,🃏 손병호 게임,🎤 노래 제목 맞추기,🖐️ 지목 게임,🔢 369,🤫 007빵,🐍 훈민정음'}
+];
+const GENRES=RAW.map(g=>({...g,items:g.L.split(',').map(p)}));
+function p(s){const i=s.indexOf(' ');return{e:s.slice(0,i),n:s.slice(i+1)}}
+const MISSIONS=['왼쪽 사람과 러브샷 🥂','가장 최근 카톡 한 줄 읽기, 싫으면 한 잔','다 같이 건배! 한 잔씩 🍻','지금 제일 조용한 사람이 다음 경기 선택권 독점','이번 경기 진 후보를 고른 사람, 그 후보 성대모사','오른쪽 사람에게 칭찬 3개, 못하면 한 잔','한 잔 쉬어가기 — 물 한 컵씩 💧','가위바위보 꼴찌가 다음 잔 따르기','이번 판은 패자가 아니라 승자 쪽이 마신다!','막내가 건배사 하기'];
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const store={get(k,d){try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch{}}};
+let party=store.get('jjan-party',true),S=null,hist=[],busy=false,custom=null;
+$('#partyT').checked=party;
+$('#partyT').onchange=e=>{party=e.target.checked;store.set('jjan-party',party)};
+$('#cnt').textContent=`월드컵 ${GENRES.length}종 · 후보 ${GENRES.reduce((a,g)=>a+g.items.length,0)}개`;
+
+$('#grid').innerHTML=GENRES.map(g=>`<button class="g" style="--h:${g.h}" data-id="${g.id}">
+ <span class="n">${g.items.length}강</span><span class="em">${g.e}</span><h3>${esc(g.t)}</h3><p>${esc(g.d)}</p></button>`).join('')
+ +`<button class="g custom" data-id="custom"><span class="em">✏️</span><h3>나만의 월드컵</h3><p>후보를 직접 적거나 친구들 사진을 넣어서</p></button>`;
+$('#grid').onclick=e=>{const b=e.target.closest('.g');if(!b)return;b.dataset.id==='custom'?openCustom():pickSize(GENRES.find(g=>g.id===b.dataset.id))};
+
+function sizesFor(n){const r=[];for(let s=4;s<=n;s*=2)r.push(s);return r.slice(-3)}
+function pickSize(g){
+ const ss=sizesFor(g.items.length);
+ modal(`<h2>${g.e} ${esc(g.t)}</h2><p>${esc(g.d)} — 몇 강으로 할까요?</p>
+ <div class="sizes">${ss.map(s=>`<button data-s="${s}">${s===4?'4강':s+'강'}</button>`).join('')}</div>
+ <p style="font-size:14px">후보는 매번 무작위로 섞여요.${party?' 술자리 모드 켜짐 🍻':''}</p>
+ <button class="btn alt" data-x>취소</button>`,b=>{if(b.dataset.s)start(g,+b.dataset.s)});
+}
+function modal(html,on){const o=$('#ov');o.innerHTML=`<div class="box" role="dialog" aria-modal="true">${html}</div>`;o.classList.remove('hide');
+ o.onclick=e=>{if(e.target===o||e.target.closest('[data-x]'))return close();const b=e.target.closest('button');if(b&&on&&on(b)!==false)close()};
+ o.querySelector('button')?.focus()}
+function close(){$('#ov').classList.add('hide');$('#ov').innerHTML=''}
+
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a}
+function start(g,size){
+ S={g,size,round:shuffle(g.items).slice(0,size),next:[],i:0,log:[],done:0,total:size-1};hist=[];
+ $('#home').classList.add('hide');$('#result').classList.add('hide');$('#play').classList.remove('hide');render()}
+const rname=n=>n===2?'결승':n===4?'준결승':n+'강';
+function card(it,k){return `<button class="c" data-k="${k}">${it.img?`<img src="${it.img}" alt="">`:`<span class="em">${esc(it.e)}</span>`}<span class="nm">${esc(it.n)}</span></button>`}
+function render(){
+ const r=S.round,a=r[S.i],b=r[S.i+1];
+ $('#rlabel').textContent=`${S.g.t.replace(' 월드컵','')} · ${rname(r.length)}${r.length>2?` ${S.i/2+1}/${r.length/2}`:''}`;
+ $('#pbar').style.width=(S.done/S.total*100)+'%';
+ $('#arena').innerHTML=card(a,0)+card(b,1)+'<div class="vs">VS</div>';
+ $('#undo').disabled=!hist.length;
+ $('#foot').classList.toggle('hide',!party);busy=false}
+$('#arena').onclick=e=>{const c=e.target.closest('.c');if(!c||busy)return;choose(+c.dataset.k)};
+document.addEventListener('keydown',e=>{if($('#play').classList.contains('hide')||!$('#ov').classList.contains('hide')||busy)return;
+ if(e.key==='ArrowLeft'||e.key==='ArrowUp')choose(0);if(e.key==='ArrowRight'||e.key==='ArrowDown')choose(1)});
+function choose(k){
+ busy=true;hist.push(JSON.stringify({...S,g:null}));
+ const cs=[...document.querySelectorAll('.c')];cs[k].classList.add('win');cs[1-k].classList.add('lose');
+ const w=S.round[S.i+k],l=S.round[S.i+1-k];
+ S.log.push({r:rname(S.round.length),w,l});S.next.push(w);S.i+=2;S.done++;
+ if(party)toast(`"${l.n}" 가리킨 사람 한 잔! 🍶`);
+ setTimeout(()=>{
+  if(S.i>=S.round.length){if(S.next.length===1)return finish();S.round=S.next;S.next=[];S.i=0}
+  render();
+  if(party&&S.done%5===0&&Math.random()<.75)mission();
+ },650)}
+$('#undo').onclick=()=>{if(!hist.length)return;const g=S.g;S=JSON.parse(hist.pop());S.g=g;render()};
+$('#quit').onclick=()=>modal(`<h2>그만할까요?</h2><p>진행 중인 월드컵은 사라져요.</p><div class="acts"><button class="btn" data-q>처음으로</button><button class="btn alt" data-x>계속하기</button></div>`,b=>{if(b.dataset.q)home()});
+function home(){$('#play').classList.add('hide');$('#result').classList.add('hide');$('#home').classList.remove('hide');S=null}
+let tt;function toast(t){document.querySelector('.toast')?.remove();const d=document.createElement('div');d.className='toast';d.textContent=t;document.body.append(d);clearTimeout(tt);tt=setTimeout(()=>d.remove(),2200)}
+function mission(){const m=MISSIONS[Math.random()*MISSIONS.length|0];
+ modal(`<span class="tag">🃏 랜덤 미션 카드</span><p>${esc(m)}</p><button class="btn go" data-x>완료!</button>`);
+ $('#ov .box').classList.add('mission')}
+$('#cdBtn').onclick=()=>{const o=$('#ov');o.classList.remove('hide');o.onclick=null;
+ const words=['하나','둘','셋!'];let i=0;
+ const step=()=>{o.innerHTML=`<div class="count" style="font-size:clamp(80px,22vw,200px)">${words[i]}</div>`;if(++i<3)setTimeout(step,650);else setTimeout(()=>{o.innerHTML=`<div class="count" style="font-size:clamp(44px,11vw,100px)">동시에 가리켜! 👉</div>`;setTimeout(close,1000)},650)};step()};
+
+function finish(){
+ const w=S.next[0],g=S.g,key='jjan-rank-'+g.id,rk=store.get(key,{});
+ const second=S.log[S.log.length-1].l;
+ if(g.id!=='custom'){rk[w.n]=(rk[w.n]||0)+1;store.set(key,rk)}
+ const path=S.log.filter(x=>x.w===w||x.w.n===w.n&&x.w.e===w.e);
+ const top=Object.entries(rk).sort((a,b)=>b[1]-a[1]).slice(0,8),max=top[0]?.[1]||1;
+ const res=$('#result');
+ res.innerHTML=`<div class="crown"><div class="sub">${esc(g.t)} ${S.size}강 우승</div>
+ ${w.img?`<img src="${w.img}" alt="">`:`<div class="em">${esc(w.e)}</div>`}<h2>${esc(w.n)}</h2>
+ <p style="margin:8px 0 0">준우승 ${esc(second.e||'')} ${esc(second.n)}${party?' · 우승 맞춘 사람 벌주 면제, 나머지 다 같이 짠! 🍻':''}</p></div>
+ <div class="tent" style="background:repeating-linear-gradient(90deg,var(--tent) 0 48px,var(--bg) 48px 96px);rotate:180deg"></div>
+ <div class="res">
+  <div class="acts"><button class="btn go" id="again">다시 하기</button><button class="btn alt" id="other">다른 월드컵</button><button class="btn alt" id="copy">결과 복사</button></div>
+  <div><h3>우승까지의 길</h3><ol class="path">${path.map(x=>`<li><b>${x.r}</b><span>${esc(x.l.e||'')} ${esc(x.l.n)} 꺾음</span></li>`).join('')}</ol></div>
+  ${top.length?`<div><h3>이 기기 누적 우승 랭킹</h3><div class="rank">${top.map(([n,c],i)=>`<div><b>${i+1}</b><span>${esc(n)}</span><i style="width:${c/max*100}%"></i><em>${c}회</em></div>`).join('')}</div></div>`:''}
+ </div>`;
+ $('#play').classList.add('hide');res.classList.remove('hide');res.scrollTop=0;
+ $('#again').onclick=()=>start(g,S.size);$('#other').onclick=home;
+ $('#copy').onclick=async e=>{const t=`🏆 ${g.t} ${S.size}강 우승: ${w.n}\n준우승: ${second.n}\n${path.map(x=>`${x.r} — ${x.l.n} 꺾음`).join('\n')}`;
+  try{await navigator.clipboard.writeText(t);e.target.textContent='복사됨 ✓'}catch{e.target.textContent='복사 실패'}};
+}
+
+function openCustom(){
+ modal(`<h2>✏️ 나만의 월드컵</h2>
+ <input type="text" id="cT" placeholder="제목 (예: 우리 과 최고의 MT 장소)" value="${esc(custom?.t||'')}">
+ <p>후보를 한 줄에 하나씩 적어 주세요. 맨 앞에 이모지를 붙이면 그림으로 나와요. 최소 4개.</p>
+ <textarea id="cL" placeholder="🍜 학교 앞 라면집&#10;🍗 치킨집&#10;🍺 호프집&#10;🍢 포장마차">${esc(custom?.raw||'')}</textarea>
+ <label class="file">📷 사진으로 후보 추가 (파일 이름이 후보 이름이 돼요)<input type="file" id="cF" accept="image/*" multiple></label>
+ <p id="cInfo"></p>
+ <div class="acts"><button class="btn go" data-go>시작하기</button><button class="btn alt" data-x>취소</button></div>`,b=>{
+  if(!b.dataset.go)return;
+  const raw=$('#cL').value,lines=raw.split('\n').map(s=>s.trim()).filter(Boolean);
+  const items=lines.map(s=>{const m=s.match(/^(\p{Extended_Pictographic}[️‍\p{Extended_Pictographic}]*)\s*(.+)$/u);return m?{e:m[1],n:m[2]}:{e:'⭐',n:s}}).concat(photos);
+  if(items.length<4){$('#cInfo').textContent='후보가 4개 이상 필요해요.';$('#cInfo').className='err';return false}
+  custom={t:$('#cT').value.trim()||'나만의 월드컵',raw};store.set('jjan-custom',{t:custom.t,raw});
+  const g={id:'custom',t:custom.t,d:'',e:'✏️',items};
+  setTimeout(()=>pickSize(g),0)});
+ let photos=[];
+ $('#cF').onchange=e=>{photos=[...e.target.files].map(f=>({e:'',n:f.name.replace(/\.[^.]+$/,''),img:URL.createObjectURL(f)}));$('#cInfo').textContent=`사진 ${photos.length}장 추가됨`;$('#cInfo').className=''};
+}
+custom=store.get('jjan-custom',null);
+}
+</script>
+</body>
+</html>
