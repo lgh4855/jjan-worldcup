@@ -1213,5 +1213,97 @@ const CREDITS={
    "lic": "CC BY-SA 3.0",
    "url": "https://commons.wikimedia.org/wiki/File:Baby_Hamster_-_2_Weeks_Old.jpg"
   }
+ },
+ "date": {
+  "PC방": {
+   "t": "PC bang in 2001.jpg",
+   "by": "Alex C",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:PC_bang_in_2001.jpg"
+  },
+  "감성 카페": {
+   "t": "Cozy cafe interior with stylish seating and large windows on a quiet street.jpg",
+   "by": "Shixart1985",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Cozy_cafe_interior_with_stylish_seating_and_large_windows_on_a_quiet_street.jpg"
+  },
+  "놀이공원": {
+   "t": "Illuminated Ferris wheel, bouncing castle and carousel at night in a funfair in Vientiane, Laos.jpg",
+   "by": "Basile Morin",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Illuminated_Ferris_wheel,_bouncing_castle_and_carousel_at_night_in_a_funfair_in_Vientiane,_Laos.jpg"
+  },
+  "바다 드라이브": {
+   "t": "Great ocean road 2001-11-14 D1010041 bay of islands coastalP.jpg",
+   "by": "Anne-Marie Steenbergen",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Great_ocean_road_2001-11-14_D1010041_bay_of_islands_coastalP.jpg"
+  },
+  "방탈출": {
+   "t": "Escape Room - \"The Expedition\" (Escape Quest Bethesda).jpg",
+   "by": "Hudson Bloom",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Escape_Room_-_%22The_Expedition%22_(Escape_Quest_Bethesda).jpg"
+  },
+  "볼링장": {
+   "t": "The New HUB Bowling Lanes (7975562295).jpg",
+   "by": "Atomic Taco from Seattle, WA, USA",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:The_New_HUB_Bowling_Lanes_(7975562295).jpg"
+  },
+  "쇼핑몰": {
+   "t": "Starfield Library COEX 20240218.jpg",
+   "by": "Sean Young (@assanges)",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Starfield_Library_COEX_20240218.jpg"
+  },
+  "아쿠아리움": {
+   "t": "Georgia Aquarium - Ocean Voyager Tunnel Jan 2006.jpg",
+   "by": "Diliff",
+   "lic": "CC BY 2.5",
+   "url": "https://commons.wikimedia.org/wiki/File:Georgia_Aquarium_-_Ocean_Voyager_Tunnel_Jan_2006.jpg"
+  },
+  "영화관": {
+   "t": "4DX seats in cinema (motion and environmental effects synced with the on-screen action) bench rows in a movie theater hall Kinostoler kinosal Kilden kino Tønsberg, Norway 2023 IMG 7849.jpg",
+   "by": "Wolfmann",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:4DX_seats_in_cinema_(motion_and_environmental_effects_synced_with_the_on-screen_action)_bench_rows_in_a_movie_theater_hall_Kinostoler_kinosal_Kilden_kino_T%C3%B8nsberg,_Norway_2023_IMG_7849.jpg"
+  },
+  "와인바": {
+   "t": "(Zazu, Quito Ecuador, interior) wine room.jpg",
+   "by": "David Adam Kess",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:(Zazu,_Quito_Ecuador,_interior)_wine_room.jpg"
+  },
+  "자전거 타기": {
+   "t": "Bicycle path on swan under stirling bridge.jpg",
+   "by": "JarrahTree",
+   "lic": "CC BY 2.5 au",
+   "url": "https://commons.wikimedia.org/wiki/File:Bicycle_path_on_swan_under_stirling_bridge.jpg"
+  },
+  "전시회": {
+   "t": "Melaka Art Gallery - Exhibition Hall.jpg",
+   "by": "Chongkian",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Melaka_Art_Gallery_-_Exhibition_Hall.jpg"
+  },
+  "코인노래방": {
+   "t": "Karaoke in Nha Trang.jpg",
+   "by": "Christophe95",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Karaoke_in_Nha_Trang.jpg"
+  },
+  "포장마차": {
+   "t": "Korea-Pojangmacha-01.jpg",
+   "by": "by superlocal at Flickr",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korea-Pojangmacha-01.jpg"
+  },
+  "한강 피크닉": {
+   "t": "Yeouido Hangang Park seen from Dangsan Railway Bridge.jpg",
+   "by": "Ox1997cow",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Yeouido_Hangang_Park_seen_from_Dangsan_Railway_Bridge.jpg"
+  }
  }
 };
