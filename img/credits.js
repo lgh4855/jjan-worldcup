@@ -1306,26 +1306,6 @@ const CREDITS={
    "url": "https://commons.wikimedia.org/wiki/File:Yeouido_Hangang_Park_seen_from_Dangsan_Railway_Bridge.jpg"
   }
  },
- "icecream": {
-  "돼지바": {
-   "t": "돼지바.jpg",
-   "by": "LR0725",
-   "lic": "CC BY-SA 3.0",
-   "url": "https://commons.wikimedia.org/wiki/File:%EB%8F%BC%EC%A7%80%EB%B0%94.jpg"
-  },
-  "메로나": {
-   "t": "Melona.jpg",
-   "by": "Hyeon-Jeong Suk",
-   "lic": "CC BY 2.0",
-   "url": "https://commons.wikimedia.org/wiki/File:Melona.jpg"
-  },
-  "수박바": {
-   "t": "Watermelon Bar 001.jpg",
-   "by": "Ocdp",
-   "lic": "CC0",
-   "url": "https://commons.wikimedia.org/wiki/File:Watermelon_Bar_001.jpg"
-  }
- },
  "retro": {
   "CD플레이어": {
    "t": "Sony-Discman-D-E307CK.jpg",
