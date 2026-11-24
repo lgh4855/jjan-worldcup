@@ -561,5 +561,91 @@ const CREDITS={
    "lic": "CC BY-SA 2.0",
    "url": "https://commons.wikimedia.org/wiki/File:Iksan_City_48_Korean_Style_Fried_chicken.jpg"
   }
+ },
+ "sul": {
+  "데킬라 샷": {
+   "t": "Tequila shots.jpg",
+   "by": "Prayitno / Thank you for (8 millions +) views from Los Angel",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Tequila_shots.jpg"
+  },
+  "레드와인": {
+   "t": "Red Wine Glass.jpg",
+   "by": "André Karwath aka Aka",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Red_Wine_Glass.jpg"
+  },
+  "막걸리": {
+   "t": "Makgeolli 4.jpg",
+   "by": "jinho kim",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Makgeolli_4.jpg"
+  },
+  "모히또": {
+   "t": "Mojito, Mazatlán, 30 de noviembre de 2022.jpg",
+   "by": "El Nuevo Doge",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Mojito,_Mazatl%C3%A1n,_30_de_noviembre_de_2022.jpg"
+  },
+  "복분자주": {
+   "t": "Bokbunjaju.jpg",
+   "by": "pepelady",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Bokbunjaju.jpg"
+  },
+  "사케": {
+   "t": "Sake set.jpg",
+   "by": "The Epopt",
+   "lic": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Sake_set.jpg"
+  },
+  "생맥주": {
+   "t": "Cheap beer in Slovakia (8400393718).jpg",
+   "by": "Guillaume Speurt from Vilnius, Lithuania",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Cheap_beer_in_Slovakia_(8400393718).jpg"
+  },
+  "샴페인": {
+   "t": "Champagne at Sausage Emporium in Sonoma, California - Sarah Stierch.jpg",
+   "by": "Missvain",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Champagne_at_Sausage_Emporium_in_Sonoma,_California_-_Sarah_Stierch.jpg"
+  },
+  "소맥": {
+   "t": "Somaek.jpg",
+   "by": "은영쌤",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Somaek.jpg"
+  },
+  "소주": {
+   "t": "Soju in korean restaurant.JPG",
+   "by": "Clément Bucco-Lechat",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Soju_in_korean_restaurant.JPG"
+  },
+  "위스키 하이볼": {
+   "t": "Torys Highball at Ebisu, Nishiogikubo south (29740423022).jpg",
+   "by": "nakashi",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Torys_Highball_at_Ebisu,_Nishiogikubo_south_(29740423022).jpg"
+  },
+  "진토닉": {
+   "t": "Gin and Tonic with ingredients.jpg",
+   "by": "NotFromUtrecht",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Gin_and_Tonic_with_ingredients.jpg"
+  },
+  "화이트와인": {
+   "t": "White Wine Glas.jpg",
+   "by": "André Karwath aka Aka",
+   "lic": "CC BY-SA 2.5",
+   "url": "https://commons.wikimedia.org/wiki/File:White_Wine_Glas.jpg"
+  },
+  "흑맥주": {
+   "t": "A glass of Stout from Cloudwater.jpg",
+   "by": "55belgianbeerfan",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:A_glass_of_Stout_from_Cloudwater.jpg"
+  }
  }
 };
