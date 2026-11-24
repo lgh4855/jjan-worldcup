@@ -86,10 +86,10 @@ function start(g,size){
  S={g,size,round:shuffle(g.items).slice(0,size),next:[],i:0,log:[],done:0,total:size-1};hist=[];
  $('#home').classList.add('hide');$('#result').classList.add('hide');$('#play').classList.remove('hide');render()}
 const rname=n=>n===2?'결승':n===4?'준결승':n+'강';
-function card(it,k){return `<button class="c" data-k="${k}">${it.img?`<img src="${it.img}" alt="">`:`<span class="em">${esc(it.e)}</span>`}<span class="nm">${esc(it.n)}</span></button>`}
+function card(it,k){return `<button class="c${it.n.length>16?' long':''}" data-k="${k}">${it.img?`<img src="${it.img}" alt="">`:`<span class="em">${esc(it.e)}</span>`}<span class="nm">${esc(it.n)}</span></button>`}
 function render(){
  const r=S.round,a=r[S.i],b=r[S.i+1];
- $('#rlabel').textContent=`${S.g.t.replace(' 월드컵','')} · ${rname(r.length)}${r.length>2?` ${S.i/2+1}/${r.length/2}`:''}`;
+ $('#rlabel').textContent=`${rname(r.length)}${r.length>2?` ${S.i/2+1}/${r.length/2}`:''} · ${S.g.t.replace(/ 월드컵$/,'')}`;
  $('#pbar').style.width=(S.done/S.total*100)+'%';
  $('#arena').innerHTML=card(a,0)+card(b,1)+'<div class="vs">VS</div>';
  $('#undo').disabled=!hist.length;

@@ -169,3 +169,5 @@ input[type=text]{width:100%;font-size:16px;padding:12px;border-radius:14px;borde
 .wrow .n{font-weight:700;font-size:13px;color:var(--h);white-space:nowrap}
 .none{text-align:center;color:var(--mute);padding:24px}
 @media(max-width:600px){.wrow{grid-template-columns:1.4em 44px minmax(0,1fr) auto;gap:10px}.wrow .em{width:44px;height:44px;font-size:26px}}
+.c.long .nm{font-size:clamp(20px,3.4vmin,34px);max-width:22em}.c.long .em{font-size:clamp(56px,11vmin,130px)}
+.top h2{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}

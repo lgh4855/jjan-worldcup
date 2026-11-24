@@ -172,13 +172,13 @@ function canClick(){
 function play(){
  show('play');
  const d=S,rv=d.phase==='reveal',mv=myVoteNow();
- $('#rlabel').textContent=`${d.g.t.replace(' 월드컵','')} · ${rname(d.round.length)}${d.round.length>2?` ${d.i/2+1}/${d.round.length/2}`:''}`;
+ $('#rlabel').textContent=`${rname(d.round.length)}${d.round.length>2?` ${d.i/2+1}/${d.round.length/2}`:''} · ${d.g.t.replace(/ 월드컵$/,'')}`;
  $('#pbar').style.width=(d.done/d.total*100)+'%';
  $('#codeBtn').textContent='방 '+code;
  const who=[0,1].map(k=>Object.entries(d.votes||{}).filter(([,v])=>v===k).map(([id])=>d.names?.[id]||players[id]?.n||'?'));
  $('#arena').innerHTML=[d.round[d.i],d.round[d.i+1]].map((it,k)=>{
   const cls=rv&&d.win!=null?(d.win===k?' win':' lose'):(!rv&&mv===k?' mine':'');
-  return `<button class="c${cls}" data-k="${k}"><span class="em">${esc(it.e)}</span><span class="nm">${esc(it.n)}</span>
+  return `<button class="c${cls}${String(it.n).length>16?' long':''}" data-k="${k}"><span class="em">${esc(it.e)}</span><span class="nm">${esc(it.n)}</span>
   ${rv?`<span class="vc">${who[k].length}표</span><span class="who">${who[k].map(esc).join(' · ')}</span>`:(!rv&&mv===k?'<span class="vc">내 선택 ✓</span>':'')}</button>`}).join('')+'<div class="vs">VS</div>';
  $('#arena').classList.toggle('ro',!canClick());
  foot()}
