@@ -927,5 +927,193 @@ const CREDITS={
    "lic": "CC0",
    "url": "https://commons.wikimedia.org/wiki/File:Busan_eomuk.jpg"
   }
+ },
+ "trip": {
+  "교토": {
+   "t": "Kiyomizu-dera, Kyoto, November 2016 -07.jpg",
+   "by": "Martin Falbisoner",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Kiyomizu-dera,_Kyoto,_November_2016_-07.jpg"
+  },
+  "남극": {
+   "t": "South Shetland-2016-Deception Island–Chinstrap penguins (Pygoscelis antarctica) 04 on iceberg.jpg",
+   "by": "Godot13",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:South_Shetland-2016-Deception_Island%E2%80%93Chinstrap_penguins_(Pygoscelis_antarctica)_04_on_iceberg.jpg"
+  },
+  "뉴욕": {
+   "t": "Manhattan from Weehawken, NJ.jpg",
+   "by": "Dmitry Avdeev",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Manhattan_from_Weehawken,_NJ.jpg"
+  },
+  "다낭": {
+   "t": "Golden Bridge Ba Na Hills aerial sunset Da Nang Vietnam.jpg",
+   "by": "Vivu Vietnam",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Golden_Bridge_Ba_Na_Hills_aerial_sunset_Da_Nang_Vietnam.jpg"
+  },
+  "두바이": {
+   "t": "Dubai Skyline mit Burj Khalifa (18241030269).jpg",
+   "by": "Tim Reckmann from Hamm, Deutschland",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Dubai_Skyline_mit_Burj_Khalifa_(18241030269).jpg"
+  },
+  "라스베이거스": {
+   "t": "Las Vegas (Nevada, USA), The Strip -- 2012 -- 6232.jpg",
+   "by": "Dietmar Rabich",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Las_Vegas_(Nevada,_USA),_The_Strip_--_2012_--_6232.jpg"
+  },
+  "런던": {
+   "t": "Tower Bridge London Dusk Feb 2006.jpg",
+   "by": "Diliff",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Tower_Bridge_London_Dusk_Feb_2006.jpg"
+  },
+  "로마": {
+   "t": "Colosseum in Rome-April 2007-1- copie 2B.jpg",
+   "by": "Diliff",
+   "lic": "CC BY-SA 2.5",
+   "url": "https://commons.wikimedia.org/wiki/File:Colosseum_in_Rome-April_2007-1-_copie_2B.jpg"
+  },
+  "몰디브": {
+   "t": "Maldives resort beach, water villas and lagoon, Maldives (Radisson resort) (DSC05461).jpg",
+   "by": "Tetiana Stepanets",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Maldives_resort_beach,_water_villas_and_lagoon,_Maldives_(Radisson_resort)_(DSC05461).jpg"
+  },
+  "몽골 초원": {
+   "t": "Grasslands in Mongolia.jpg",
+   "by": "Tenkyuu216",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Grasslands_in_Mongolia.jpg"
+  },
+  "발리": {
+   "t": "Bali, Rice fields, Rice terraces in East Bali, Indonesia.jpg",
+   "by": "Vyacheslav Argenberg",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Bali,_Rice_fields,_Rice_terraces_in_East_Bali,_Indonesia.jpg"
+  },
+  "방콕": {
+   "t": "Templo Wat Arun, Bangkok, Tailandia, 2013-08-22, DD 30.jpg",
+   "by": "Diego Delso",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Templo_Wat_Arun,_Bangkok,_Tailandia,_2013-08-22,_DD_30.jpg"
+  },
+  "부산": {
+   "t": "Haeundae Beach in Busan.jpg",
+   "by": "StephNurnberg",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Haeundae_Beach_in_Busan.jpg"
+  },
+  "산토리니": {
+   "t": "1000 Three domes of Oia in Santorini Photo by Giles Laurent.jpg",
+   "by": "Giles Laurent",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:1000_Three_domes_of_Oia_in_Santorini_Photo_by_Giles_Laurent.jpg"
+  },
+  "스위스": {
+   "t": "CH.VS.Zermatt 2021-10-17 Matterhorn 8726.jpg",
+   "by": "Roy Egloff",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:CH.VS.Zermatt_2021-10-17_Matterhorn_8726.jpg"
+  },
+  "시드니": {
+   "t": "Sydney Harbour Bridge night.jpg",
+   "by": "Diliff",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Sydney_Harbour_Bridge_night.jpg"
+  },
+  "시베리아 횡단열차": {
+   "t": "VL 85-022 container train.jpg",
+   "by": "Sorovas",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:VL_85-022_container_train.jpg"
+  },
+  "아이슬란드": {
+   "t": "Skógafoss July 2014.JPG",
+   "by": "Martin Falbisoner",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Sk%C3%B3gafoss_July_2014.JPG"
+  },
+  "아테네": {
+   "t": "Attica 06-13 Athens 50 View from Philopappos - Acropolis Hill.jpg",
+   "by": "A.Savin",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg"
+  },
+  "오사카": {
+   "t": "Dotonbori, Osaka, at night, November 2016.jpg",
+   "by": "Martin Falbisoner",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Dotonbori,_Osaka,_at_night,_November_2016.jpg"
+  },
+  "이스탄불": {
+   "t": "Hagia Sophia Mars 2013.jpg",
+   "by": "Arild Vågen",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_Mars_2013.jpg"
+  },
+  "이스터섬": {
+   "t": "Moai Rano raraku.jpg",
+   "by": "Aurbina",
+   "lic": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Moai_Rano_raraku.jpg"
+  },
+  "제주도": {
+   "t": "Hydrangea macrophylla in front of Seongsan Ilchulbong volcano at blue hour in Jeju Island South Korea.jpg",
+   "by": "Basile Morin",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Hydrangea_macrophylla_in_front_of_Seongsan_Ilchulbong_volcano_at_blue_hour_in_Jeju_Island_South_Korea.jpg"
+  },
+  "캐나다 로키": {
+   "t": "Moraine Lake 17092005.jpg",
+   "by": "Gorgo",
+   "lic": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Moraine_Lake_17092005.jpg"
+  },
+  "케냐 사파리": {
+   "t": "Natural World Kenya Safaris - Masai Mara Safari tours.jpg",
+   "by": "NaturalWorldKenya",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Natural_World_Kenya_Safaris_-_Masai_Mara_Safari_tours.jpg"
+  },
+  "파리": {
+   "t": "Tour eiffel at sunrise from the trocadero.jpg",
+   "by": "Tristan Nitot",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Tour_eiffel_at_sunrise_from_the_trocadero.jpg"
+  },
+  "프라하": {
+   "t": "North view of Charles Bridge from Mánesův most, Prague 20160808 1.jpg",
+   "by": "DXR",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:North_view_of_Charles_Bridge_from_M%C3%A1nes%C5%AFv_most,_Prague_20160808_1.jpg"
+  },
+  "하노이": {
+   "t": "Hanoi - Turtle Tower (Tháp Rùa), Hoàn Kiếm Lake.jpg",
+   "by": "P. Hughes",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Hanoi_-_Turtle_Tower_(Th%C3%A1p_R%C3%B9a),_Ho%C3%A0n_Ki%E1%BA%BFm_Lake.jpg"
+  },
+  "하와이": {
+   "t": "Waikiki Beach (2024)-L1004709.jpg",
+   "by": "Frank Schulenburg",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Waikiki_Beach_(2024)-L1004709.jpg"
+  },
+  "홍콩": {
+   "t": "International Commerce Centre on Victoria Harbour.jpg",
+   "by": "Wilfredor",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:International_Commerce_Centre_on_Victoria_Harbour.jpg"
+  },
+  "후지산": {
+   "t": "Mount Fuji at sunset, March 2025.jpg",
+   "by": "Romain Guy from San Francisco, USA",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Mount_Fuji_at_sunset,_March_2025.jpg"
+  }
  }
 };
