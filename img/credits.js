@@ -1115,5 +1115,103 @@ const CREDITS={
    "lic": "CC0",
    "url": "https://commons.wikimedia.org/wiki/File:Mount_Fuji_at_sunset,_March_2025.jpg"
   }
+ },
+ "animal": {
+  "거북이": {
+   "t": "Green Sea Turtle Swimming in the Galápagos.jpg",
+   "by": "MasterfulNerd",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Green_Sea_Turtle_Swimming_in_the_Gal%C3%A1pagos.jpg"
+  },
+  "고래": {
+   "t": "001 Humpback whale breaching in Ballena Marine National Park Photo by Giles Laurent.jpg",
+   "by": "Giles Laurent",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:001_Humpback_whale_breaching_in_Ballena_Marine_National_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  "나무늘보": {
+   "t": "Bradypus.jpg",
+   "by": "Stefan Laube (Tauchgurke)",
+   "lic": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Bradypus.jpg"
+  },
+  "대형견": {
+   "t": "Dülmen, Hausdülmen, Golden Retriever -- 2022 -- 5945.jpg",
+   "by": "Dietmar Rabich",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Hausd%C3%BClmen,_Golden_Retriever_--_2022_--_5945.jpg"
+  },
+  "독수리": {
+   "t": "Bald eagle in Alaska 2016-3.jpg",
+   "by": "Andy Morffew from Itchen Abbas, Hampshire, UK",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Bald_eagle_in_Alaska_2016-3.jpg"
+  },
+  "돌고래": {
+   "t": "010 Atlantic bottlenose dolphin jumping at Pelican point Photo by Giles Laurent.jpg",
+   "by": "Giles Laurent",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:010_Atlantic_bottlenose_dolphin_jumping_at_Pelican_point_Photo_by_Giles_Laurent.jpg"
+  },
+  "부잣집 고양이": {
+   "t": "Francis Sartorius I (1734-1804) - 'Psyche', a White Persian Cat - 1449066 - National Trust.jpg",
+   "by": "Francis Sartorius",
+   "lic": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Francis_Sartorius_I_(1734-1804)_-_%27Psyche%27,_a_White_Persian_Cat_-_1449066_-_National_Trust.jpg"
+  },
+  "사자": {
+   "t": "002 Male Lion prowling in the Serengeti National Park Photo by Giles Laurent.jpg",
+   "by": "Giles Laurent",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:002_Male_Lion_prowling_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  "수달": {
+   "t": "Wild Sea Otter (17348235490).jpg",
+   "by": "Rennett Stowe from USA",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Wild_Sea_Otter_(17348235490).jpg"
+  },
+  "여우": {
+   "t": "Alaska Red Fox (Vulpes vulpes).jpg",
+   "by": "Gregory \"Slobirdr\" Smith",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Alaska_Red_Fox_(Vulpes_vulpes).jpg"
+  },
+  "용": {
+   "t": "2008-02-19 Chinese sculpture of dragon in Tainan.jpg",
+   "by": "Pascal Terjan",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:2008-02-19_Chinese_sculpture_of_dragon_in_Tainan.jpg"
+  },
+  "유니콘": {
+   "t": "The Unicorn in Captivity (from the Unicorn Tapestries) MET DP118991.jpg",
+   "by": "",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:The_Unicorn_in_Captivity_(from_the_Unicorn_Tapestries)_MET_DP118991.jpg"
+  },
+  "코알라": {
+   "t": "Koala in Zoo Duisburg.jpg",
+   "by": "Till Niermann",
+   "lic": "CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Koala_in_Zoo_Duisburg.jpg"
+  },
+  "판다": {
+   "t": "Giant panda eating bamboo Taipei Zoo.jpg",
+   "by": "KQuhen",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Giant_panda_eating_bamboo_Taipei_Zoo.jpg"
+  },
+  "펭귄": {
+   "t": "Penguin in Antarctica jumping out of the water.jpg",
+   "by": "Christopher Michel",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Penguin_in_Antarctica_jumping_out_of_the_water.jpg"
+  },
+  "햄스터": {
+   "t": "Baby Hamster - 2 Weeks Old.jpg",
+   "by": "Augustus Binu : flickr : Instagram",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Baby_Hamster_-_2_Weeks_Old.jpg"
+  }
  }
 };
