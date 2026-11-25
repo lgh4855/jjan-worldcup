@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>연결 테스트</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;padding:16px}li{margin:6px 0}</style></head><body>
+<h1>실시간 서버 연결 테스트</h1><ul id="o"></ul>
+<script src="https://unpkg.com/mqtt@5.10.1/dist/mqtt.min.js"></script>
+<script>
+const B=['wss://broker.emqx.io:8084/mqtt','wss://mqtt.eclipseprojects.io:443/mqtt','wss://broker.hivemq.com:8884/mqtt','wss://test.mosquitto.org:8081/mqtt','wss://public.mqtthq.com:8084/mqtt'];
+for(const u of B){const li=document.createElement('li');li.textContent=u+' … 연결 중';o.append(li);const t0=Date.now();
+ const c=mqtt.connect(u,{connectTimeout:8000,reconnectPeriod:0,clientId:'t'+Math.random().toString(36).slice(2,8)});
+ c.on('connect',()=>{const tp='jjanwc-test/'+Math.random().toString(36).slice(2);c.subscribe(tp,()=>{c.publish(tp,'ping')});c.on('message',()=>{li.textContent=u+' ✅ OK ('+(Date.now()-t0)+'ms)';c.end()})});
+ c.on('error',e=>{li.textContent=u+' ❌ '+e.message});setTimeout(()=>{if(!li.textContent.includes('✅'))li.textContent=u+' ❌ 시간 초과';c.end(true)},10000)}
+</script></body></html>
