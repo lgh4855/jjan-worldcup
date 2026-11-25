@@ -178,7 +178,7 @@ function play(){
  const who=[0,1].map(k=>Object.entries(d.votes||{}).filter(([,v])=>v===k).map(([id])=>d.names?.[id]||players[id]?.n||'?'));
  $('#arena').innerHTML=[d.round[d.i],d.round[d.i+1]].map((it,k)=>{
   const cls=rv&&d.win!=null?(d.win===k?' win':' lose'):(!rv&&mv===k?' mine':'');
-  return `<button class="c${cls}${String(it.n).length>16?' long':''}" data-k="${k}" data-pg="${esc(d.g.id)}" data-pn="${esc(it.n)}"><span class="em">${esc(it.e)}</span><img class="ph" alt=""><span class="nm">${esc(it.n)}</span>
+  return `<button class="c${cls}${String(it.n).length>16?' long':''}" data-k="${k}" data-pg="${esc(d.g.id)}" data-pn="${esc(it.n)}"><span class="em">${esc(it.e)}</span><img class="ph" alt=""><span class="nm">${esc(it.n)}</span>${it.h?`<span class="how">${esc(it.h)}</span>`:''}
   ${rv?`<span class="vc">${who[k].length}표</span><span class="who">${who[k].map(esc).join(' · ')}</span>`:(!rv&&mv===k?'<span class="vc">내 선택 ✓</span>':'')}</button>`}).join('')+'<div class="vs">VS</div>';
  loadPhotos($('#arena'));$('#arena').classList.toggle('ro',!canClick());
  foot()}
@@ -228,7 +228,7 @@ function resolve(s,k){
 function result(){
  show('result');close();
  const d=S,w=d.winner,path=d.log.filter(x=>same(x.w,w));
- $('#result').innerHTML=`<div class="crown" data-pg="${esc(d.g.id)}" data-pn="${esc(w.n)}"><div class="sub">${esc(d.g.t)} ${d.size}강 우승</div><div class="em">${esc(w.e)}</div><img class="ph" alt=""><h2>${esc(w.n)}</h2>
+ $('#result').innerHTML=`<div class="crown" data-pg="${esc(d.g.id)}" data-pn="${esc(w.n)}"><div class="sub">${esc(d.g.t)} ${d.size}강 우승</div><div class="em">${esc(w.e)}</div><img class="ph" alt=""><h2>${esc(w.n)}</h2>${w.h?`<p class="howw">📖 ${esc(w.h)}</p>`:''}
  <p style="margin:8px 0 0">준우승 ${esc(d.second.e)} ${esc(d.second.n)} · 다 같이 짠! 🍻</p></div>
  <div class="tent flip"></div>
  <div class="res">
