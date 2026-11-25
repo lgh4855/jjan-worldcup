@@ -86,7 +86,7 @@ function start(g,size){
  S={g,size,round:shuffle(g.items).slice(0,size),next:[],i:0,log:[],done:0,total:size-1};hist=[];
  $('#home').classList.add('hide');$('#result').classList.add('hide');$('#play').classList.remove('hide');render()}
 const rname=n=>n===2?'결승':n===4?'준결승':n+'강';
-function card(it,k){return `<button class="c${it.n.length>16?' long':''}" data-k="${k}" data-pg="${esc(S.g.id)}" data-pn="${esc(it.n)}">${it.img?`<img src="${it.img}" alt="">`:`<span class="em">${esc(it.e)}</span><img class="ph" alt="">`}<span class="nm">${esc(it.n)}</span>${it.h?`<span class="how">${esc(it.h)}</span>`:''}</button>`}
+function card(it,k){return `<button class="c${it.n.length>16?' long':''}" data-k="${k}" data-pg="${esc(S.g.id)}" data-pn="${esc(it.n)}">${it.img?`<img src="${it.img}" alt="">`:`<span class="em">${esc(it.e)}</span><img class="ph" alt="">`}<span class="nm">${esc(it.n)}</span>${it.h?`<span class="how">${howHTML(it.h)}</span>`:''}</button>`}
 function render(){
  const r=S.round,a=r[S.i],b=r[S.i+1];
  $('#rlabel').textContent=`${rname(r.length)}${r.length>2?` ${S.i/2+1}/${r.length/2}`:''} · ${S.g.t.replace(/ 월드컵$/,'')}`;
@@ -127,7 +127,7 @@ function finish(){
  const top=Object.entries(rk).sort((a,b)=>b[1]-a[1]).slice(0,8),max=top[0]?.[1]||1;
  const res=$('#result');
  res.innerHTML=`<div class="crown" data-pg="${esc(g.id)}" data-pn="${esc(w.n)}"><div class="sub">${esc(g.t)} ${S.size}강 우승</div>
- ${w.img?`<img src="${w.img}" alt="">`:`<div class="em">${esc(w.e)}</div><img class="ph" alt="">`}<h2>${esc(w.n)}</h2>${w.h?`<p class="howw">📖 ${esc(w.h)}</p>`:''}
+ ${w.img?`<img src="${w.img}" alt="">`:`<div class="em">${esc(w.e)}</div><img class="ph" alt="">`}<h2>${esc(w.n)}</h2>${w.h?`<p class="howw">${typeof w.h==="string"?"📖 ":""}${howHTML(w.h)}</p>`:''}
  <p style="margin:8px 0 0">준우승 ${esc(second.e||'')} ${esc(second.n)}${party?' · 우승 맞춘 사람 벌주 면제, 나머지 다 같이 짠! 🍻':''}</p></div>
  <div class="tent" style="background:repeating-linear-gradient(90deg,var(--tent) 0 48px,var(--bg) 48px 96px);rotate:180deg"></div>
  <div class="res">

@@ -183,3 +183,6 @@ footer a{color:var(--tent);font-weight:700}
 .c .how{font-size:clamp(13px,1.9vmin,16px);line-height:1.45;max-width:30em;text-align:center;opacity:.95;background:#0002;border-radius:12px;padding:8px 12px;text-wrap:pretty}
 .crown .howw{max-width:34em;margin:12px auto 0;background:#0002;border-radius:14px;padding:12px 16px;font-size:16px;line-height:1.5}
 @media(max-width:600px),(orientation:portrait) and (max-width:900px){.c .how{font-size:12.5px;padding:6px 10px}.c:has(.how) .em{font-size:clamp(44px,9vmin,90px)}}
+.how .hl,.howw .hl{display:block;text-align:left}.how .hl+.hl,.howw .hl+.hl{margin-top:4px}
+.how .hl b,.howw .hl b{display:inline-block;margin-right:6px;padding:0 6px;border-radius:6px;background:#fff3;font-weight:900;font-size:.9em}
+.howw .hl{text-align:left}
