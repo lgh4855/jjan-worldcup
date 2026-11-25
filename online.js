@@ -5,7 +5,7 @@ const MODE=window.MODE==='vote'?'vote':'sync';
 const T=MODE==='vote'
  ?{name:'다 같이 투표',em:'🗳️',desc:'각자 폰으로 몰래 투표하고 동시에 공개! 소수파는 이름이 불려요 🍶'}
  :{name:'방장 화면 공유',em:'📺',desc:'방장이 고르면 모두의 폰이 같은 화면으로 넘어가요. 다 같이 "하나, 둘, 셋!" 하고 가리키기 👉'};
-const BROKER='wss://broker.emqx.io:8084/mqtt';
+const BROKERS=['wss://broker.emqx.io:8084/mqtt','wss://mqtt.eclipseprojects.io:443/mqtt','wss://broker.hivemq.com:8884/mqtt'];
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const ld=(o,k,d)=>{try{return JSON.parse(o.getItem(k))??d}catch{return d}};
@@ -36,31 +36,38 @@ function shareBox(){return `<div class="share"><div class="qr">${qrSvg(joinUrl()
 async function copy(t,btn){try{await navigator.clipboard.writeText(t);btn.textContent='복사됨 ✓'}catch{btn.textContent='복사 실패'}}
 
 /* ---------- 네트워크 ---------- */
+// 공개 서버 여러 곳에 동시에 연결해요. 네트워크마다 막히는 포트가 달라서, 하나라도 겹치면 같은 방에서 만날 수 있어요.
 function connect(c){return new Promise((res,rej)=>{
- code=c;base=`jjanwc1/${MODE}/${c}`;let done=false;
- const t=setTimeout(()=>{if(!done){done=true;try{c2.end(true)}catch{}rej(new Error('timeout'))}},10000);
- const c2=mqtt.connect(BROKER,{clientId:'jj_'+me.id+'_'+Math.random().toString(36).slice(2,6),connectTimeout:8000,reconnectPeriod:2000,clean:true,
-  will:{topic:base+'/p/'+me.id,payload:'',retain:true,qos:1}});
- cl=c2;
- c2.on('connect',()=>{net(true);if(myName&&code)presence();
-  if(!done)c2.subscribe(base+'/#',{qos:1},err=>{if(done)return;done=true;clearTimeout(t);err?rej(err):res()})});
- c2.on('offline',()=>net(false));c2.on('reconnect',()=>net(false));
- c2.on('message',(tp,m)=>{if(cl===c2&&tp.startsWith(base+'/'))onMsg(tp.slice(base.length+1),m.toString())});
+ code=c;base=`jjanwc1/${MODE}/${c}`;let done=false;cl=[];
+ const t=setTimeout(()=>{if(!done){done=true;for(const x of cl)try{x.end(true)}catch{};cl=null;rej(new Error('timeout'))}},12000);
+ BROKERS.forEach((url,bi)=>{
+  let c2;try{c2=mqtt.connect(url,{clientId:'jj_'+me.id+'_'+Math.random().toString(36).slice(2,6),connectTimeout:9000,reconnectPeriod:3000,clean:true,
+   will:{topic:base+'/p/'+me.id,payload:'',retain:true,qos:1}})}catch{return}
+  c2.bi=bi;cl.push(c2);
+  c2.on('connect',()=>{net();if(myName&&code)presence(c2);if(isHost&&S)pub('state',S,true,c2);
+   c2.subscribe(base+'/#',{qos:1},err=>{if(err||done)return;done=true;clearTimeout(t);res()})});
+  c2.on('offline',net);c2.on('close',net);c2.on('error',()=>{});
+  c2.on('message',(tp,m)=>{if(cl&&cl.includes(c2)&&tp.startsWith(base+'/'))onMsg(tp.slice(base.length+1),m.toString(),bi)});
+ });
 })}
-const pub=(sub,d,retain=false)=>{if(cl)cl.publish(base+'/'+sub,d==null?'':JSON.stringify(d),{qos:1,retain})};
-const presence=()=>pub('p/'+me.id,{n:myName,t:Date.now()},true);
-function net(ok){$('#net').classList.toggle('hide',ok||!cl)}
-function leave(){if(cl){const c=cl;pub('p/'+me.id,null,true);cl=null;setTimeout(()=>c.end(),300)}
- S=null;lastSeq=-1;players={};isHost=false;myVote=null;sv(sessionStorage,'jj-room',null);history.replaceState(null,'',location.pathname);net(true)}
+const pub=(sub,d,retain=false,only)=>{if(!cl)return;const msg=d==null?'':JSON.stringify(d);for(const x of only?[only]:cl)if(x.connected)x.publish(base+'/'+sub,msg,{qos:1,retain})};
+const presence=only=>pub('p/'+me.id,{n:myName,t:Date.now()},true,only);
+const liveCount=()=>cl?cl.filter(x=>x.connected).length:0;
+function net(){const ok=!cl||liveCount()>0;$('#net').classList.toggle('hide',ok);const e=$('#srv');if(e)e.textContent=cl?`서버 ${liveCount()}/${BROKERS.length}곳 연결됨`:''}
+function leave(){if(cl){const cs=cl;pub('p/'+me.id,null,true);cl=null;setTimeout(()=>{for(const x of cs)try{x.end()}catch{}},400)}
+ S=null;lastSeq=-1;players={};isHost=false;myVote=null;sv(sessionStorage,'jj-room',null);history.replaceState(null,'',location.pathname);net()}
 
-function onMsg(sub,raw){
+const seenEvt=new Set();
+function onMsg(sub,raw,bi){
  let d=null;if(raw){try{d=JSON.parse(raw)}catch{return}}
  if(sub.startsWith('p/')){const id=sub.slice(2);
-  if(d&&typeof d.n==='string')players[id]={n:d.n.slice(0,10)};else delete players[id];
+  // 어느 서버에서 보였는지 기억해서, 한 서버에서만 끊겨도 목록에서 빠지지 않게 해요
+  if(d&&typeof d.n==='string'){const p=players[id]||{via:new Set()};p.n=d.n.slice(0,10);p.via.add(bi);players[id]=p}
+  else if(players[id]){players[id].via.delete(bi);if(!players[id].via.size)delete players[id]}
   renderPlayers();checkAll();return}
  if(sub==='state'){if(!d){if(S&&!isHost){leave();lobby('방장이 방을 닫았어요.')}return}onState(d);return}
  if(sub==='vote'&&d){onVote(d);return}
- if(sub==='evt'&&d&&d.t==='cd')countdown();
+ if(sub==='evt'&&d&&d.t==='cd'){if(d.id){if(seenEvt.has(d.id))return;seenEvt.add(d.id)}countdown()}
 }
 function onState(d){
  if(!d||d.v!==1||typeof d.seq!=='number'||d.seq<=lastSeq)return;
@@ -92,10 +99,10 @@ async function enter(c){
  if(typeof mqtt==='undefined'){err('실시간 연결 모듈을 불러오지 못했어요. 새로고침해 주세요.');return}
  myName=n;sv(localStorage,'jj-name',n);lock(true);m.className='';m.textContent='연결 중…';
  const mk=c===null;if(mk)c=Array.from({length:4},()=>CH[Math.random()*CH.length|0]).join('');
- try{await connect(c)}catch{cl=null;err('서버에 연결하지 못했어요. 와이파이나 데이터를 확인하고 다시 눌러 주세요.');return}
+ try{await connect(c)}catch{cl=null;err('실시간 서버에 연결하지 못했어요. 와이파이를 끄고 데이터로(또는 반대로) 바꾼 뒤 다시 눌러 주세요.');return}
  presence();
  if(mk)setState({v:1,host:me.id,phase:'lobby',drinks:{},names:{}});
- else{await wait(()=>S,4000);if(!S){leave();lobby('방을 찾을 수 없어요. 코드를 다시 확인해 주세요.');return}}
+ else{await wait(()=>S,7000);if(!S){leave();lobby('방을 찾지 못했어요. 코드가 맞는지, 방장 폰에서 방이 열려 있는지 확인해 주세요. 계속 안 되면 방장과 같은 와이파이로 바꿔 보세요.');return}}
  sv(sessionStorage,'jj-room',c);history.replaceState(null,'','#'+c);
 }
 
@@ -130,8 +137,8 @@ function room(){
  $('#room').innerHTML=`<header class="hero mini"><div><h1>${T.em} 방 ${esc(code)}</h1><p>${isHost?'친구들한테 QR을 보여주거나 링크를 보내세요. 다 모이면 월드컵을 골라요.':'들어왔어요! 방장이 월드컵을 고르는 중이에요…'}</p></div></header><div class="tent"></div>
  <div class="roomtop">${shareBox()}<div class="people"><h3>참가자 <span id="pc"></span></h3><div class="chips" id="chips"></div>${drinkBoard()}</div></div>
  ${isHost?`<h2 class="pick">어떤 월드컵을 할까요?</h2><div id="gbrowse"></div>`:'<p class="waiting">⏳ 잠시만 기다려 주세요</p>'}
- <div class="acts" style="padding:8px 16px 40px"><button class="btn alt" id="lv">${isHost?'방 닫기':'방 나가기'}</button></div>`;
- renderPlayers();
+ <p class="hint" id="srv" style="padding-top:12px"></p><div class="acts" style="padding:8px 16px 40px"><button class="btn alt" id="lv">${isHost?'방 닫기':'방 나가기'}</button></div>`;
+ renderPlayers();net();
  if(isHost)genreBrowser($('#gbrowse'),{customDesc:'후보를 직접 적어서',onPick:id=>id==='custom'?customGame():pickSize(GENRES.find(g=>g.id===id))});
  $('#room').onclick=e=>{
   const b=e.target.closest('button');if(!b)return;
@@ -204,7 +211,7 @@ $('#arena').onclick=e=>{
  if(isHost){const s=clone(S);resolve(s,k);setState(s)}};
 $('#foot').onclick=e=>{
  const b=e.target.closest('button');if(!b||!isHost)return;
- if(b.id==='cdb')pub('evt',{t:'cd'});
+ if(b.id==='cdb')pub('evt',{t:'cd',id:Math.random().toString(36).slice(2)});
  if(b.id==='rvb')reveal();
  if(b.id==='nx'){const s=advance(S,S.win);Object.assign(s,{votes:{},win:null,tie:false,drunk:[]});if(s.phase!=='done')s.phase='match';myVote=null;setState(s)}};
 
