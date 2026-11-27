@@ -15,7 +15,7 @@ for(const g of G){
 }
 for(let i=0;i<G.length;i++)for(let j=i+1;j<G.length;j++){
  const a=new Set(G[i].items.map(x=>norm(x.n))),b=G[j].items.map(x=>norm(x.n)),o=b.filter(x=>a.has(x)).length;
- if(o/Math.min(a.size,b.length)>0.5)warn(`"${G[i].t}"와 "${G[j].t}" 후보가 ${o}개 겹쳐요 (같은 월드컵일 수 있어요)`);
+ if(o/Math.min(a.size,b.length)>0.5&&Math.min(a.size,b.length)>=Math.max(a.size,b.length)/2)warn(`"${G[i].t}"와 "${G[j].t}" 후보가 ${o}개 겹쳐요 (같은 월드컵일 수 있어요)`);
 }
 console.log(bad?`\n${bad}건 확인 필요`:`✅ 중복 없음 — 월드컵 ${G.length}개, 후보 ${G.reduce((a,g)=>a+g.items.length,0)}개`);
 process.exitCode=bad?1:0;

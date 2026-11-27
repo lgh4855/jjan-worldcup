@@ -1361,5 +1361,1115 @@ const CREDITS={
    "lic": "CC BY-SA 4.0",
    "url": "https://commons.wikimedia.org/wiki/File:Samsung_flip_phone,_Bunde_(2019)_01.jpg"
   }
+ },
+ "chickenfood": {
+  "간장치킨": {
+   "t": "Korean fried chicken 4 ganjang.jpg",
+   "by": "happy o'ne",
+   "lic": "CC BY 2.0 kr",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean_fried_chicken_4_ganjang.jpg"
+  },
+  "닭가슴살 샐러드": {
+   "t": "DSC 7112 A plate of grilled chicken Caesar salad on a table set for dinner with glasses of red wine and soft candlelight in the background.jpg",
+   "by": "PattayaPatrol",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:DSC_7112_A_plate_of_grilled_chicken_Caesar_salad_on_a_table_set_for_dinner_with_glasses_of_red_wine_and_soft_candlelight_in_the_background.jpg"
+  },
+  "닭강정": {
+   "t": "만석닭강정.jpg",
+   "by": "LR0725",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:%EB%A7%8C%EC%84%9D%EB%8B%AD%EA%B0%95%EC%A0%95.jpg"
+  },
+  "닭꼬치": {
+   "t": "Dak-kkochi 1.jpg",
+   "by": "향긋한 커피매니아",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Dak-kkochi_1.jpg"
+  },
+  "닭발": {
+   "t": "Chicken feet.jpg",
+   "by": "User:Anna Frodesiak",
+   "lic": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Chicken_feet.jpg"
+  },
+  "닭볶음탕": {
+   "t": "Korean.food-Dakbokemtang-01.jpg",
+   "by": "stuart_spivack (a flickr user)",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean.food-Dakbokemtang-01.jpg"
+  },
+  "닭칼국수": {
+   "t": "Korean.noodle-Kalguksu-01.jpg",
+   "by": "by jslander",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean.noodle-Kalguksu-01.jpg"
+  },
+  "백숙": {
+   "t": "Baeksuk.jpg",
+   "by": "hyun chun kim",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Baeksuk.jpg"
+  },
+  "삼계탕": {
+   "t": "Korean soup-Samgyetang-13.jpg",
+   "by": "sozoooo",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean_soup-Samgyetang-13.jpg"
+  },
+  "양념치킨": {
+   "t": "Yangnyeom Chicken Korean fried chicken.jpg",
+   "by": "Startandstar",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Yangnyeom_Chicken_Korean_fried_chicken.jpg"
+  },
+  "오야코동": {
+   "t": "Oyakodon 003.jpg",
+   "by": "Ocdp",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Oyakodon_003.jpg"
+  },
+  "찜닭": {
+   "t": "Jjimdak 1.jpg",
+   "by": "Jordi Sanchez",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Jjimdak_1.jpg"
+  },
+  "철판 닭갈비": {
+   "t": "Korean cuisine-Dakgalbi-01.jpg",
+   "by": "by shizu k (shezzz) at Flickr",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean_cuisine-Dakgalbi-01.jpg"
+  },
+  "탄두리 치킨": {
+   "t": "Tandoori chicken Indian.jpg",
+   "by": "pelican",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Tandoori_chicken_Indian.jpg"
+  },
+  "파닭": {
+   "t": "Padak.jpg",
+   "by": "Choi2451",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Padak.jpg"
+  },
+  "후라이드 치킨": {
+   "t": "Iksan City 48 Korean Style Fried chicken.jpg",
+   "by": "KOREA.NET",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Iksan_City_48_Korean_Style_Fried_chicken.jpg"
+  }
+ },
+ "porkfood": {
+  "감자탕": {
+   "t": "Gamja-tang 5.jpg",
+   "by": "travel oriented",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Gamja-tang_5.jpg"
+  },
+  "김치찜": {
+   "t": "김치찜.jpg",
+   "by": "밤하늘의 수정",
+   "lic": "CC BY-SA 2.0 kr",
+   "url": "https://commons.wikimedia.org/wiki/File:%EA%B9%80%EC%B9%98%EC%B0%9C.jpg"
+  },
+  "돈까스": {
+   "t": "Tonkatsu of Kimukatsu.jpg",
+   "by": "Minseong Kim",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Tonkatsu_of_Kimukatsu.jpg"
+  },
+  "돈코츠 라멘": {
+   "t": "Tonkotsu ramen in Tokyo.jpg",
+   "by": "Syced",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Tonkotsu_ramen_in_Tokyo.jpg"
+  },
+  "동파육": {
+   "t": "Dongpo pork by superturtle.jpg",
+   "by": "superturtle",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Dongpo_pork_by_superturtle.jpg"
+  },
+  "돼지갈비": {
+   "t": "Dwaeji-galbi-gui.jpg",
+   "by": "lazy fri13th",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Dwaeji-galbi-gui.jpg"
+  },
+  "돼지국밥": {
+   "t": "Dwaeji-gukbap 1.jpg",
+   "by": "chomjong",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Dwaeji-gukbap_1.jpg"
+  },
+  "두루치기": {
+   "t": "Gimchi-duruchigi-ssam.jpg",
+   "by": "대경라이프",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Gimchi-duruchigi-ssam.jpg"
+  },
+  "목살 구이": {
+   "t": "Moksal-gui.jpg",
+   "by": "happy11u",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Moksal-gui.jpg"
+  },
+  "바비큐 폭립": {
+   "t": "Pork-ribs 02.jpg",
+   "by": "Pannet",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Pork-ribs_02.jpg"
+  },
+  "보쌈": {
+   "t": "Korean cuisine-Bossam-04.jpg",
+   "by": "Timber Tank",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean_cuisine-Bossam-04.jpg"
+  },
+  "삼겹살": {
+   "t": "Korean.cuisine-Samgyeopsal-01.jpg",
+   "by": "by hellochris",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean.cuisine-Samgyeopsal-01.jpg"
+  },
+  "순대": {
+   "t": "Korean.food-Sundae-01.jpg",
+   "by": "ayustety (a flickr user)",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean.food-Sundae-01.jpg"
+  },
+  "제육볶음": {
+   "t": "Jeyuk-bokkeum 2.jpg",
+   "by": "국립국어원",
+   "lic": "CC BY-SA 2.0 kr",
+   "url": "https://commons.wikimedia.org/wiki/File:Jeyuk-bokkeum_2.jpg"
+  },
+  "족발": {
+   "t": "Jokbal 2.jpg",
+   "by": "국립국어원",
+   "lic": "CC BY-SA 2.0 kr",
+   "url": "https://commons.wikimedia.org/wiki/File:Jokbal_2.jpg"
+  },
+  "탕수육": {
+   "t": "Tangsuyuk (Korean Chinese sweet and sour pork).jpg",
+   "by": "용스토리",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Tangsuyuk_(Korean_Chinese_sweet_and_sour_pork).jpg"
+  }
+ },
+ "beeffood": {
+  "갈비찜": {
+   "t": "Testing out @davidchang's mom's Galbi Jjim recipe for possible inclusion in Christmas Dinner. It's excellent. -Korean -shortribs -galbijjim (15334632144).jpg",
+   "by": "Arnold Gatilao from Oakland, CA, USA",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Testing_out_@davidchang%27s_mom%27s_Galbi_Jjim_recipe_for_possible_inclusion_in_Christmas_Dinner._It%27s_excellent._-Korean_-shortribs_-galbijjim_(15334632144).jpg"
+  },
+  "갈비탕": {
+   "t": "Galbi-tang 2.jpg",
+   "by": "Debbie Tingzon",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Galbi-tang_2.jpg"
+  },
+  "곰탕": {
+   "t": "Gomtang.jpg",
+   "by": "chomjong",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Gomtang.jpg"
+  },
+  "규동": {
+   "t": "Noto beef bowl.jpg",
+   "by": "Miyuki Meinaka",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Noto_beef_bowl.jpg"
+  },
+  "대창": {
+   "t": "Daechang-gui.jpg",
+   "by": "향긋한 커피매니아",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Daechang-gui.jpg"
+  },
+  "로스트비프": {
+   "t": "A roast beef dinner at The Queen's Head, Boreham, Essex, England - lighter.jpg",
+   "by": "Acabashi",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:A_roast_beef_dinner_at_The_Queen%27s_Head,_Boreham,_Essex,_England_-_lighter.jpg"
+  },
+  "불고기": {
+   "t": "Bulgogi 3.jpg",
+   "by": "Debbie Tingzon",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Bulgogi_3.jpg"
+  },
+  "샤브샤브": {
+   "t": "Shabu Shabu photo Don Ramey Logan.jpg",
+   "by": "Don Ramey Logan",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Shabu_Shabu_photo_Don_Ramey_Logan.jpg"
+  },
+  "소갈비 구이": {
+   "t": "Galbi 1.jpg",
+   "by": "donchili",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Galbi_1.jpg"
+  },
+  "소곱창": {
+   "t": "Gopchang 2.jpg",
+   "by": "뚱표아빠의 세상사는 이야기",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Gopchang_2.jpg"
+  },
+  "스테이크": {
+   "t": "Steak and onions.jpg",
+   "by": "E4024",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Steak_and_onions.jpg"
+  },
+  "쌀국수": {
+   "t": "Phở bò in a German restaurant 02.jpg",
+   "by": "Kritzolina",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Ph%E1%BB%9F_b%C3%B2_in_a_German_restaurant_02.jpg"
+  },
+  "육개장": {
+   "t": "Korean soup-Yukgaejang-01.jpg",
+   "by": "live",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean_soup-Yukgaejang-01.jpg"
+  },
+  "육회": {
+   "t": "2020-10-20 육회.jpeg",
+   "by": "revi",
+   "lic": "CC BY-SA 2.0 kr",
+   "url": "https://commons.wikimedia.org/wiki/File:2020-10-20_%EC%9C%A1%ED%9A%8C.jpeg"
+  },
+  "차돌박이": {
+   "t": "Chadolbagi 3.jpg",
+   "by": "Debbie Tingzon",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Chadolbagi_3.jpg"
+  },
+  "함박 스테이크": {
+   "t": "Hamburg steak1.jpg",
+   "by": "OiMax from Tokyo, Japan",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Hamburg_steak1.jpg"
+  }
+ },
+ "gukbap": {
+  "갈비탕": {
+   "t": "Galbi-tang 2.jpg",
+   "by": "Debbie Tingzon",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Galbi-tang_2.jpg"
+  },
+  "곰탕": {
+   "t": "Gomtang.jpg",
+   "by": "chomjong",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Gomtang.jpg"
+  },
+  "굴국밥": {
+   "t": "Gul-gukbap.jpg",
+   "by": "Dr 방원장",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Gul-gukbap.jpg"
+  },
+  "내장탕": {
+   "t": "Naejang-tang.jpg",
+   "by": "lazy fri13th",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Naejang-tang.jpg"
+  },
+  "돼지국밥": {
+   "t": "Dwaeji-gukbap 1.jpg",
+   "by": "chomjong",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Dwaeji-gukbap_1.jpg"
+  },
+  "따로국밥": {
+   "t": "Ttaro gukbap 2.JPG",
+   "by": "hyolee2",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Ttaro_gukbap_2.JPG"
+  },
+  "뼈해장국": {
+   "t": "Ppyeohaejangguk 20240929 001.jpg",
+   "by": "Mobius6",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Ppyeohaejangguk_20240929_001.jpg"
+  },
+  "선지해장국": {
+   "t": "Korean soup-Seonjiguk-02.jpg",
+   "by": "SJ Yang",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean_soup-Seonjiguk-02.jpg"
+  },
+  "설렁탕": {
+   "t": "Seolleongtang.jpg",
+   "by": "이동원",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Seolleongtang.jpg"
+  },
+  "소머리국밥": {
+   "t": "So-meori-ttaro-gukbap.jpg",
+   "by": "lazy fri13th",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:So-meori-ttaro-gukbap.jpg"
+  },
+  "순대국밥": {
+   "t": "Korean soup Sundae gukbap 01.jpg",
+   "by": "Mar del Este",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean_soup_Sundae_gukbap_01.jpg"
+  },
+  "우거지국밥": {
+   "t": "Sagol-ugeoji-guk.jpg",
+   "by": "뚱표아빠의 세상사는 이야기",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Sagol-ugeoji-guk.jpg"
+  },
+  "육개장": {
+   "t": "Korean soup-Yukgaejang-01.jpg",
+   "by": "live",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean_soup-Yukgaejang-01.jpg"
+  },
+  "장터국밥": {
+   "t": "Gugil Ttaro gukbap.jpg",
+   "by": "Arumdaum",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Gugil_Ttaro_gukbap.jpg"
+  },
+  "콩나물국밥": {
+   "t": "Kongnamul gukbap 20230408 001.jpg",
+   "by": "Mobius6",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Kongnamul_gukbap_20230408_001.jpg"
+  }
+ },
+ "chinese": {
+  "고추잡채": {
+   "t": "Pepper japchae01.jpg",
+   "by": "Mar del Este",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Pepper_japchae01.jpg"
+  },
+  "군만두": {
+   "t": "Japanese pan fried gyoza.jpg",
+   "by": "Adryan R. Villanueva",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Japanese_pan_fried_gyoza.jpg"
+  },
+  "깐쇼새우": {
+   "t": "Kkansyo-saeu DSC00978.jpg",
+   "by": "최광모",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Kkansyo-saeu_DSC00978.jpg"
+  },
+  "깐풍기": {
+   "t": "Korean cuisine-Kkanpunggi-01.jpg",
+   "by": "egg (Hong, Yun Seon)",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean_cuisine-Kkanpunggi-01.jpg"
+  },
+  "꿔바로우": {
+   "t": "Guobaorou at Zhenbutong, Changchun (20220826174428).jpg",
+   "by": "N509FZ",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Guobaorou_at_Zhenbutong,_Changchun_(20220826174428).jpg"
+  },
+  "동파육": {
+   "t": "Dongpo pork by superturtle.jpg",
+   "by": "superturtle",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Dongpo_pork_by_superturtle.jpg"
+  },
+  "마라탕": {
+   "t": "Malatang from Hope Tree (20220226172344).jpg",
+   "by": "N509FZ",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Malatang_from_Hope_Tree_(20220226172344).jpg"
+  },
+  "볶음밥": {
+   "t": "Egg Fried Rice.jpg",
+   "by": "Gaurav Dhwaj Khadka",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Egg_Fried_Rice.jpg"
+  },
+  "양장피": {
+   "t": "Yangjangpi 3.jpg",
+   "by": "햇살소리",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Yangjangpi_3.jpg"
+  },
+  "울면": {
+   "t": "Ulmyeon.jpg",
+   "by": "Galaxea",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Ulmyeon.jpg"
+  },
+  "유린기": {
+   "t": "Yuringi 2.jpg",
+   "by": "안녕내꺼",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Yuringi_2.jpg"
+  },
+  "짜장면": {
+   "t": "Jajangmyeon by KFoodaddict.jpg",
+   "by": "KFoodaddict",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Jajangmyeon_by_KFoodaddict.jpg"
+  },
+  "짬뽕": {
+   "t": "Jjamppong-sujebi 2.jpg",
+   "by": "대경라이프",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Jjamppong-sujebi_2.jpg"
+  },
+  "탕수육": {
+   "t": "Tangsuyuk (Korean Chinese sweet and sour pork).jpg",
+   "by": "용스토리",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Tangsuyuk_(Korean_Chinese_sweet_and_sour_pork).jpg"
+  },
+  "팔보채": {
+   "t": "Palbo-chae.jpg",
+   "by": "숭굴이",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Palbo-chae.jpg"
+  }
+ },
+ "haejang": {
+  "굴국밥": {
+   "t": "Gul-gukbap.jpg",
+   "by": "Dr 방원장",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Gul-gukbap.jpg"
+  },
+  "김치찌개": {
+   "t": "Korean.cuisine-Kimchi jjigae-01.jpg",
+   "by": "by avlxyz",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean.cuisine-Kimchi_jjigae-01.jpg"
+  },
+  "라면": {
+   "t": "Ramen Jump 002.jpg",
+   "by": "Ocdp",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Ramen_Jump_002.jpg"
+  },
+  "물냉면": {
+   "t": "KOCIS Mul-naengmyeon, Chilled Buckwheat Noodle Soup (4594756202).jpg",
+   "by": "Korea.net / Korean Culture and Information Service",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:KOCIS_Mul-naengmyeon,_Chilled_Buckwheat_Noodle_Soup_(4594756202).jpg"
+  },
+  "복국": {
+   "t": "Pufferfish soup of Karato Market.jpg",
+   "by": "そらみみ (Soramimi)",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Pufferfish_soup_of_Karato_Market.jpg"
+  },
+  "북엇국": {
+   "t": "Bugeo-guk 2.jpg",
+   "by": "국립국어원",
+   "lic": "CC BY-SA 2.0 kr",
+   "url": "https://commons.wikimedia.org/wiki/File:Bugeo-guk_2.jpg"
+  },
+  "뼈해장국": {
+   "t": "Ppyeohaejangguk 20240929 001.jpg",
+   "by": "Mobius6",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Ppyeohaejangguk_20240929_001.jpg"
+  },
+  "선지해장국": {
+   "t": "Korean soup-Seonjiguk-02.jpg",
+   "by": "SJ Yang",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean_soup-Seonjiguk-02.jpg"
+  },
+  "순댓국": {
+   "t": "Korean soup Sundae gukbap 01.jpg",
+   "by": "Mar del Este",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean_soup_Sundae_gukbap_01.jpg"
+  },
+  "쌀국수": {
+   "t": "Phở bò in a German restaurant 02.jpg",
+   "by": "Kritzolina",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Ph%E1%BB%9F_b%C3%B2_in_a_German_restaurant_02.jpg"
+  },
+  "아이스 아메리카노": {
+   "t": "Iced Coffee in Glass - Sunshine Coffee - Laramie Cafe (53838344552).jpg",
+   "by": "Tony Webster",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Iced_Coffee_in_Glass_-_Sunshine_Coffee_-_Laramie_Cafe_(53838344552).jpg"
+  },
+  "재첩국": {
+   "t": "Korean clam soup-Jaecheopguk-01.jpg",
+   "by": "by shizu k (shezzz) at Flickr",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean_clam_soup-Jaecheopguk-01.jpg"
+  },
+  "짬뽕": {
+   "t": "Jjamppong-sujebi 2.jpg",
+   "by": "대경라이프",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Jjamppong-sujebi_2.jpg"
+  },
+  "콩나물국밥": {
+   "t": "Kongnamul gukbap 20230408 001.jpg",
+   "by": "Mobius6",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Kongnamul_gukbap_20230408_001.jpg"
+  },
+  "햄버거": {
+   "t": "NCI Visuals Food Hamburger.jpg",
+   "by": "Len Rizzi (photographer)",
+   "lic": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:NCI_Visuals_Food_Hamburger.jpg"
+  }
+ },
+ "winter": {
+  "계란빵": {
+   "t": "Gyeranppang by travel oriented.jpg",
+   "by": "travel oriented from Seoul, South Korea",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Gyeranppang_by_travel_oriented.jpg"
+  },
+  "국화빵": {
+   "t": "Korean.dessert-Gukhwappang-01.jpg",
+   "by": "by LWY",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean.dessert-Gukhwappang-01.jpg"
+  },
+  "군고구마": {
+   "t": "Gungoguma (roasted sweet potatoes) 2.jpg",
+   "by": "국립국어원",
+   "lic": "CC BY-SA 2.0 kr",
+   "url": "https://commons.wikimedia.org/wiki/File:Gungoguma_(roasted_sweet_potatoes)_2.jpg"
+  },
+  "군옥수수": {
+   "t": "Grilled Corn (Unsplash).jpg",
+   "by": "Dragne Marius marius_dragne",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Grilled_Corn_(Unsplash).jpg"
+  },
+  "귤": {
+   "t": "Mandarin Oranges (Citrus Reticulata).jpg",
+   "by": "Joe Ravi",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Mandarin_Oranges_(Citrus_Reticulata).jpg"
+  },
+  "떡볶이": {
+   "t": "Korean.snacks-Tteokbokki-08.jpg",
+   "by": "by jetalone (flickr)",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean.snacks-Tteokbokki-08.jpg"
+  },
+  "붕어빵": {
+   "t": "Bungeoppang-01.jpg",
+   "by": "Siqbal at en.wikipedia",
+   "lic": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Bungeoppang-01.jpg"
+  },
+  "십원빵": {
+   "t": "10 won bread.jpg",
+   "by": "Seefooddiet",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:10_won_bread.jpg"
+  },
+  "어묵": {
+   "t": "Eomuk-tang 2.jpg",
+   "by": "bigtorica",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Eomuk-tang_2.jpg"
+  },
+  "찹쌀떡": {
+   "t": "찹쌀떡 - Chapssaltteok.jpg",
+   "by": "Debbie Tingzon",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:%EC%B0%B9%EC%8C%80%EB%96%A1_-_Chapssaltteok.jpg"
+  },
+  "타코야끼": {
+   "t": "Takoyaki by yomi955.jpg",
+   "by": "heiwa4126",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Takoyaki_by_yomi955.jpg"
+  },
+  "핫초코": {
+   "t": "Hot chocolate mug with whipped cream.jpg",
+   "by": "User Jonik on en.wikipedia",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Hot_chocolate_mug_with_whipped_cream.jpg"
+  },
+  "호떡": {
+   "t": "Korean snack-Hotteok-01.jpg",
+   "by": "by yearofeats",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korean_snack-Hotteok-01.jpg"
+  }
+ },
+ "stronganimal": {
+  "고릴라": {
+   "t": "Mountain gorilla (Gorilla beringei beringei) female 3.jpg",
+   "by": "Charles J. Sharp",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Mountain_gorilla_(Gorilla_beringei_beringei)_female_3.jpg"
+  },
+  "바다악어": {
+   "t": "Saltwater crocodile in Sundarbans National Park November 2024 by Tisha Mukherjee 03.jpg",
+   "by": "Tisha Mukherjee",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Saltwater_crocodile_in_Sundarbans_National_Park_November_2024_by_Tisha_Mukherjee_03.jpg"
+  },
+  "백상아리": {
+   "t": "White shark.jpg",
+   "by": "Pterantula (Terry Goss) at en.wikipedia",
+   "lic": "CC BY 2.5",
+   "url": "https://commons.wikimedia.org/wiki/File:White_shark.jpg"
+  },
+  "범고래": {
+   "t": "Orca, Killer Whale, breaching - Morro Bay, CA May 8, 2014 Orcinus orca.jpg",
+   "by": "Mike Baird from Morro Bay, USA",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Orca,_Killer_Whale,_breaching_-_Morro_Bay,_CA_May_8,_2014_Orcinus_orca.jpg"
+  },
+  "북극곰": {
+   "t": "Polar bear (Ursus maritimus) in the drift ice region north of Svalbard.jpg",
+   "by": "Andreas Weith",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Polar_bear_(Ursus_maritimus)_in_the_drift_ice_region_north_of_Svalbard.jpg"
+  },
+  "사자": {
+   "t": "002 Male Lion prowling in the Serengeti National Park Photo by Giles Laurent.jpg",
+   "by": "Giles Laurent",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:002_Male_Lion_prowling_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  "아나콘다": {
+   "t": "Anaconda común (Eunectes murinus), Tierpark Hellabrunn, Múnich, Alemania, 2012-06-17, DD 01.JPG",
+   "by": "Diego Delso",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Anaconda_com%C3%BAn_(Eunectes_murinus),_Tierpark_Hellabrunn,_M%C3%BAnich,_Alemania,_2012-06-17,_DD_01.JPG"
+  },
+  "아프리카들소": {
+   "t": "African buffalo (Syncerus caffer) male with Oxpecker.jpg",
+   "by": "Charles J. Sharp",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:African_buffalo_(Syncerus_caffer)_male_with_Oxpecker.jpg"
+  },
+  "코끼리": {
+   "t": "African Elephant Bull Taking Mud Bath 2019-07-26.jpg",
+   "by": "Axel Tschentscher",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:African_Elephant_Bull_Taking_Mud_Bath_2019-07-26.jpg"
+  },
+  "코모도왕도마뱀": {
+   "t": "Komodo dragon (Varanus komodoensis).jpg",
+   "by": "Charles J. Sharp",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Komodo_dragon_(Varanus_komodoensis).jpg"
+  },
+  "코뿔소": {
+   "t": "Adult White Rhinoceros (Ceratotherium simum simum) (CWPG).jpg",
+   "by": "Vauxford",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Adult_White_Rhinoceros_(Ceratotherium_simum_simum)_(CWPG).jpg"
+  },
+  "하마": {
+   "t": "Hippopotamus in the Zambezi.jpg",
+   "by": "Bernard Gagnon",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Hippopotamus_in_the_Zambezi.jpg"
+  },
+  "하이에나": {
+   "t": "Spotted hyena (Crocuta crocuta).jpg",
+   "by": "Charles J. Sharp",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Spotted_hyena_(Crocuta_crocuta).jpg"
+  },
+  "호랑이": {
+   "t": "Bengal tiger (Panthera tigris tigris) female 3.jpg",
+   "by": "Charles J. Sharp",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Bengal_tiger_(Panthera_tigris_tigris)_female_3.jpg"
+  },
+  "회색곰": {
+   "t": "Grizzly Bear (Ursus arctos ssp.).jpg",
+   "by": "Gregory \"Slobirdr\" Smith",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Grizzly_Bear_(Ursus_arctos_ssp.).jpg"
+  }
+ },
+ "veggie": {
+  "가지": {
+   "t": "Purple eggplants 2017 A.jpg",
+   "by": "Fructibus",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Purple_eggplants_2017_A.jpg"
+  },
+  "고수": {
+   "t": "Coriander Leaves.jpg",
+   "by": "Rupeshm364",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Coriander_Leaves.jpg"
+  },
+  "당근": {
+   "t": "Carrots of many colors.jpg",
+   "by": "Stephen Ausmus",
+   "lic": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Carrots_of_many_colors.jpg"
+  },
+  "미나리": {
+   "t": "Oenanthe javanica1.jpg",
+   "by": "KENPEI",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Oenanthe_javanica1.jpg"
+  },
+  "방울양배추": {
+   "t": "Roasted Brussels sprouts - December 2023 - Sarah Stierch 02.jpg",
+   "by": "Missvain",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Roasted_Brussels_sprouts_-_December_2023_-_Sarah_Stierch_02.jpg"
+  },
+  "버섯": {
+   "t": "Fresh shiitake mushrooms.jpg",
+   "by": "Fumikas Sagisavas",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Fresh_shiitake_mushrooms.jpg"
+  },
+  "브로콜리": {
+   "t": "Basket of broccoli in Singapore market.jpg",
+   "by": "David",
+   "lic": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Basket_of_broccoli_in_Singapore_market.jpg"
+  },
+  "비트": {
+   "t": "Beetroots in a basket.jpg",
+   "by": "W.carter",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Beetroots_in_a_basket.jpg"
+  },
+  "셀러리": {
+   "t": "Bundles of celery for sale in supermarket.jpg",
+   "by": "Fumikas Sagisavas",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Bundles_of_celery_for_sale_in_supermarket.jpg"
+  },
+  "쑥갓": {
+   "t": "Glebionis coronaria,or Crown Daisy in the gardens of Darjeeling Tourist Lodge, a property maintained by WBTDC 2 of 2.jpg",
+   "by": "Subhrajyoti07",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Glebionis_coronaria,or_Crown_Daisy_in_the_gardens_of_Darjeeling_Tourist_Lodge,_a_property_maintained_by_WBTDC_2_of_2.jpg"
+  },
+  "양파": {
+   "t": "Mixed onions.jpg",
+   "by": "Colin",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Mixed_onions.jpg"
+  },
+  "콩": {
+   "t": "Black soybeans.jpg",
+   "by": "Fumikas Sagisavas",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Black_soybeans.jpg"
+  },
+  "파프리카": {
+   "t": "Capsicum annuum fruits IMGP0049.jpg",
+   "by": "Nikodem Nijaki",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Capsicum_annuum_fruits_IMGP0049.jpg"
+  }
+ },
+ "babyanimal": {
+  "강아지": {
+   "t": "Miniature poodle puppy 6 weeks, outdoors, in sun, on grass, head, eye, flash, close-up. (Nærbilde med blits av 6 uker gammel dvergpuddel-hvalp i sol på gress.) Tjøme, Norway 2020-04-09 DSC06421.jpg",
+   "by": "Wolfmann",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Miniature_poodle_puppy_6_weeks,_outdoors,_in_sun,_on_grass,_head,_eye,_flash,_close-up._(N%C3%A6rbilde_med_blits_av_6_uker_gammel_dvergpuddel-hvalp_i_sol_p%C3%A5_gress.)_Tj%C3%B8me,_Norway_2020-04-09_DSC06421.jpg"
+  },
+  "병아리": {
+   "t": "New Born Baby Chicks.jpg",
+   "by": "Yvessurbano0",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:New_Born_Baby_Chicks.jpg"
+  },
+  "새끼 돼지": {
+   "t": "Contre-jour photograph of a standing piglet at sunset with colorful sky in Don Det Laos.jpg",
+   "by": "Basile Morin",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Contre-jour_photograph_of_a_standing_piglet_at_sunset_with_colorful_sky_in_Don_Det_Laos.jpg"
+  },
+  "새끼 여우": {
+   "t": "Fox cub - geograph.org.uk - 2485155.jpg",
+   "by": "Peter Trimming",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Fox_cub_-_geograph.org.uk_-_2485155.jpg"
+  },
+  "새끼 오리": {
+   "t": "20250718 mallard duckling wethersfield cove PD200055.jpg",
+   "by": "Paul Danese",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:20250718_mallard_duckling_wethersfield_cove_PD200055.jpg"
+  },
+  "새끼 토끼": {
+   "t": "White bunny rabbit.jpg",
+   "by": "Umiwasheretomeme",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:White_bunny_rabbit.jpg"
+  },
+  "아기 고슴도치": {
+   "t": "Baby Hedgehog Sleeping.jpg",
+   "by": "BrightnessWings19",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Baby_Hedgehog_Sleeping.jpg"
+  },
+  "아기 고양이": {
+   "t": "BEN Bengalian kitten (4492540155).jpg",
+   "by": "Nickolas Titkov from Moscow, Russian Federation",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:BEN_Bengalian_kitten_(4492540155).jpg"
+  },
+  "아기 기린": {
+   "t": "Giraffe Calf.jpg",
+   "by": "Awantura",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Giraffe_Calf.jpg"
+  },
+  "아기 물범": {
+   "t": "Weaned harp seal pup (cropped).jpg",
+   "by": "Lysogeny",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Weaned_harp_seal_pup_(cropped).jpg"
+  },
+  "아기 북극곰": {
+   "t": "Polar bear (Ursus) maritimus female with its cub, Svalbard (2).jpg",
+   "by": "AWeith",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Polar_bear_(Ursus)_maritimus_female_with_its_cub,_Svalbard_(2).jpg"
+  },
+  "아기 수달": {
+   "t": "Northern sea otter (Enhydra lutris kenyoni) female and pup Tofino.jpg",
+   "by": "Charles J. Sharp",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Northern_sea_otter_(Enhydra_lutris_kenyoni)_female_and_pup_Tofino.jpg"
+  },
+  "아기 코끼리": {
+   "t": "004 Desert-adapted baby elephants cuddling in Damaraland Photo by Giles Laurent.jpg",
+   "by": "Giles Laurent",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:004_Desert-adapted_baby_elephants_cuddling_in_Damaraland_Photo_by_Giles_Laurent.jpg"
+  },
+  "아기 판다": {
+   "t": "Su Lin giant panda bear cub at the San Diego Zoo.jpg",
+   "by": "Original uploader was Ailuropoda at en.wikipedia",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Su_Lin_giant_panda_bear_cub_at_the_San_Diego_Zoo.jpg"
+  },
+  "아기 펭귄": {
+   "t": "Emperor Penguin chicks moulting.jpg",
+   "by": "User:Fguerraz This illustration was made by François",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Emperor_Penguin_chicks_moulting.jpg"
+  }
+ },
+ "dog": {
+  "골든 리트리버": {
+   "t": "Dülmen, Hausdülmen, Golden Retriever -- 2022 -- 5945.jpg",
+   "by": "Dietmar Rabich",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Hausd%C3%BClmen,_Golden_Retriever_--_2022_--_5945.jpg"
+  },
+  "닥스훈트": {
+   "t": "Smooth Dachshund Portrait.jpg",
+   "by": "Lokal Profil [1]",
+   "lic": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Smooth_Dachshund_Portrait.jpg"
+  },
+  "말티즈": {
+   "t": "Maltese Dog 1.jpg",
+   "by": "Alfredo Borba",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Maltese_Dog_1.jpg"
+  },
+  "보더콜리": {
+   "t": "Border Collie 600.jpg",
+   "by": "",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Border_Collie_600.jpg"
+  },
+  "비글": {
+   "t": "Beagle in Viroinval (DSC04556).jpg",
+   "by": "Trougnouf (Benoit Brummer)",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Beagle_in_Viroinval_(DSC04556).jpg"
+  },
+  "비숑 프리제": {
+   "t": "Bichon Frisé sitting.jpg",
+   "by": "Julia",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Bichon_Fris%C3%A9_sitting.jpg"
+  },
+  "사모예드": {
+   "t": "Samoyed dog two year old female dllu.jpg",
+   "by": "Dllu",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Samoyed_dog_two_year_old_female_dllu.jpg"
+  },
+  "시바견": {
+   "t": "Shiba inu taiki.jpg",
+   "by": "Roberto Vasarri",
+   "lic": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Shiba_inu_taiki.jpg"
+  },
+  "시베리안 허스키": {
+   "t": "Siberian Husky heterchromia edit.jpg",
+   "by": "user:Przykuta, corrected by Pharaoh Hound",
+   "lic": "CC BY 2.5",
+   "url": "https://commons.wikimedia.org/wiki/File:Siberian_Husky_heterchromia_edit.jpg"
+  },
+  "웰시코기": {
+   "t": "Fawn and white Welsh Corgi puppy standing on rear legs and sticking out the tongue.jpg",
+   "by": "Huoadg5888Minor edits made by Subsidiary account",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Fawn_and_white_Welsh_Corgi_puppy_standing_on_rear_legs_and_sticking_out_the_tongue.jpg"
+  },
+  "진돗개": {
+   "t": "Korea Jindo Dog 3.jpg",
+   "by": "Canarian",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Korea_Jindo_Dog_3.jpg"
+  },
+  "치와와": {
+   "t": "Chihuahua qui profite du soleil.jpg",
+   "by": "JackyM59",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Chihuahua_qui_profite_du_soleil.jpg"
+  },
+  "퍼그": {
+   "t": "Pug - 1 year Old.jpg",
+   "by": "Augustus Binu : flickr",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Pug_-_1_year_Old.jpg"
+  },
+  "포메라니안": {
+   "t": "PomeranianKardashianpoms.jpg",
+   "by": "Kardashianpoms",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:PomeranianKardashianpoms.jpg"
+  },
+  "푸들": {
+   "t": "Toy Poodle wearing clothes in Tokyo.jpg",
+   "by": "Basile Morin",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Toy_Poodle_wearing_clothes_in_Tokyo.jpg"
+  },
+  "프렌치 불독": {
+   "t": "Two French bulldogs swimming in life jackets.jpg",
+   "by": "W.carter",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Two_French_bulldogs_swimming_in_life_jackets.jpg"
+  }
+ },
+ "thrill": {
+  "그랜드 캐니언 스카이워크": {
+   "t": "SkywalkFromOutsideLedge.jpg",
+   "by": "Complexsimplellc at English Wikipedia",
+   "lic": "CC BY 2.5",
+   "url": "https://commons.wikimedia.org/wiki/File:SkywalkFromOutsideLedge.jpg"
+  },
+  "그레이트 블루홀": {
+   "t": "Great Blue Hole.jpg",
+   "by": "U.S. Geological Survey (USGS)",
+   "lic": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Great_Blue_Hole.jpg"
+  },
+  "노르웨이 트롤퉁가": {
+   "t": "View of trolltunga.jpg",
+   "by": "TerjeN",
+   "lic": "CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:View_of_trolltunga.jpg"
+  },
+  "노르웨이 프레이케스톨렌": {
+   "t": "Preikestolen Norge.jpg",
+   "by": "Stefan Krause, Germany",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Preikestolen_Norge.jpg"
+  },
+  "두바이 스카이다이빙": {
+   "t": "Skydiving over Palm Jumeirah.jpg",
+   "by": "Dubai Tourism",
+   "lic": "CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Skydiving_over_Palm_Jumeirah.jpg"
+  },
+  "마추픽추 와이나픽추": {
+   "t": "Machu Picchu, Perú, 2015-07-30, DD 47.JPG",
+   "by": "Diego Delso",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Machu_Picchu,_Per%C3%BA,_2015-07-30,_DD_47.JPG"
+  },
+  "마카오 타워 번지점프": {
+   "t": "Bungee jumping outside Macau Tower.jpg",
+   "by": "Ellanor",
+   "lic": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Bungee_jumping_outside_Macau_Tower.jpg"
+  },
+  "볼리비아 융가스 데스 로드": {
+   "t": "Camino de los Yungas Bolivia.jpg",
+   "by": "celineo",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Camino_de_los_Yungas_Bolivia.jpg"
+  },
+  "빅토리아 폭포 데블스 풀": {
+   "t": "Victoria Falls, Zimbabwe 01.jpg",
+   "by": "Bernard Gagnon",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Victoria_Falls,_Zimbabwe_01.jpg"
+  },
+  "사하라 사막": {
+   "t": "Sand dunes in the Sahara Desert on the border of Algeria and Morocco.tif",
+   "by": "Dr. Ondřej Havelka (cestovatel)",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Sand_dunes_in_the_Sahara_Desert_on_the_border_of_Algeria_and_Morocco.tif"
+  },
+  "상어 케이지 다이빙": {
+   "t": "Shark cage diving Gaansbai.jpg",
+   "by": "kallerna",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Shark_cage_diving_Gaansbai.jpg"
+  },
+  "아마존 정글": {
+   "t": "Amazon River - 2018.jpg",
+   "by": "Alexander Gerst",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Amazon_River_-_2018.jpg"
+  },
+  "에베레스트 베이스캠프": {
+   "t": "Everest North Face toward Base Camp Tibet Luca Galuzzi 2006.jpg",
+   "by": "Luca Galuzzi (Lucag)",
+   "lic": "CC BY-SA 2.5",
+   "url": "https://commons.wikimedia.org/wiki/File:Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg"
+  },
+  "장가계 유리다리": {
+   "t": "Zhangjiajie Glass Bridge 20190726 (2).jpg",
+   "by": "Sunyiming",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Zhangjiajie_Glass_Bridge_20190726_(2).jpg"
+  },
+  "코모도섬": {
+   "t": "Komodo Island Shore.jpg",
+   "by": "Hotel Kaesong",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Komodo_Island_Shore.jpg"
+  },
+  "하와이 킬라우에아 화산": {
+   "t": "Pāhoehoe Lava flow.JPG",
+   "by": "Brocken Inaglory",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:P%C4%81hoehoe_Lava_flow.JPG"
+  }
  }
 };
