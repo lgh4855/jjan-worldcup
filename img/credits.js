@@ -2471,5 +2471,317 @@ const CREDITS={
    "lic": "CC BY-SA 3.0",
    "url": "https://commons.wikimedia.org/wiki/File:P%C4%81hoehoe_Lava_flow.JPG"
   }
+ },
+ "island": {
+  "고무보트": {
+   "t": "Inflatable rescue boat, Egham Fire Station, Surrey - June 2025.jpg",
+   "by": "Mertbiol",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Inflatable_rescue_boat,_Egham_Fire_Station,_Surrey_-_June_2025.jpg"
+  },
+  "구급상자": {
+   "t": "Erste Hilfe 003 2026 02 17.jpg",
+   "by": "Friedrich Haag",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Erste_Hilfe_003_2026_02_17.jpg"
+  },
+  "낚싯대": {
+   "t": "Fishing rod & reel, Mahamaya Lake (01).jpg",
+   "by": "Moheen Reeyad",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Fishing_rod_%26_reel,_Mahamaya_Lake_(01).jpg"
+  },
+  "냄비": {
+   "t": "Pot (IMG 0261).jpg",
+   "by": "Matti Blume",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Pot_(IMG_0261).jpg"
+  },
+  "도끼": {
+   "t": "Small firefighters axe.jpg",
+   "by": "Eunosfire986",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Small_firefighters_axe.jpg"
+  },
+  "라면 1000봉지": {
+   "t": "Instant ramen packages in H Mart.jpg",
+   "by": "Reconrabbit",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Instant_ramen_packages_in_H_Mart.jpg"
+  },
+  "라이터": {
+   "t": "Zippo Detail.jpg",
+   "by": "Ricardo Liberato",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Zippo_Detail.jpg"
+  },
+  "반려견": {
+   "t": "Dülmen, Hausdülmen, Golden Retriever -- 2022 -- 5945.jpg",
+   "by": "Dietmar Rabich",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Hausd%C3%BClmen,_Golden_Retriever_--_2022_--_5945.jpg"
+  },
+  "밧줄": {
+   "t": "Coiled rope 03235.jpg",
+   "by": "Nevit Dilmen",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Coiled_rope_03235.jpg"
+  },
+  "생수 1년치": {
+   "t": "DK-84 - København - Water - Copenhagen - Denmark - Bottled Water (4890236937).jpg",
+   "by": "CGP Grey",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:DK-84_-_K%C3%B8benhavn_-_Water_-_Copenhagen_-_Denmark_-_Bottled_Water_(4890236937).jpg"
+  },
+  "손전등": {
+   "t": "Flashlight.jpg",
+   "by": "KMJ at German Wikipedia",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Flashlight.jpg"
+  },
+  "위성전화": {
+   "t": "Iridium 9575 Extreme & Garmin GPSMAP 64st (16014581691).jpg",
+   "by": "Tony Webster from Portland, Oregon, United States",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Iridium_9575_Extreme_%26_Garmin_GPSMAP_64st_(16014581691).jpg"
+  },
+  "정수 필터": {
+   "t": "PAUL - Portable Aqua Unit for Lifesaving.jpg",
+   "by": "Fgsww, University of Kassel",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:PAUL_-_Portable_Aqua_Unit_for_Lifesaving.jpg"
+  },
+  "칼": {
+   "t": "ESEE-5-Knife-Review-Tactical-Survival-Knife-1536x1024.jpg",
+   "by": "The editor 540",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:ESEE-5-Knife-Review-Tactical-Survival-Knife-1536x1024.jpg"
+  },
+  "태양광 충전기": {
+   "t": "Solar phone charger hawaii.jpg",
+   "by": "Energypeg",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Solar_phone_charger_hawaii.jpg"
+  },
+  "텐트": {
+   "t": "Campement - 20150802 15h44 (10723).jpg",
+   "by": "Another one of my pictures: This photograph was taken by Medium69 (William Crochot) and released under the license st",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Campement_-_20150802_15h44_(10723).jpg"
+  }
+ },
+ "zombieweapon": {
+  "골프채": {
+   "t": "Golf club, Callawax X-20 4 iron - II.jpg",
+   "by": "Fpedraza",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Golf_club,_Callawax_X-20_4_iron_-_II.jpg"
+  },
+  "망치": {
+   "t": "Claw hammer.JPG",
+   "by": "ایران پتک",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Claw_hammer.JPG"
+  },
+  "삽": {
+   "t": "Shovel Ready Project (7231596148).jpg",
+   "by": "Alex Proimos",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Shovel_Ready_Project_(7231596148).jpg"
+  },
+  "석궁": {
+   "t": "Crossbow-BHM 585-P6141209-gradient.jpg",
+   "by": "Rama",
+   "lic": "CC BY-SA 3.0 fr",
+   "url": "https://commons.wikimedia.org/wiki/File:Crossbow-BHM_585-P6141209-gradient.jpg"
+  },
+  "소방 도끼": {
+   "t": "Hatchet firefighter.png",
+   "by": "timak",
+   "lic": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Hatchet_firefighter.png"
+  },
+  "소화기": {
+   "t": "Hohenloher Freilandmuseum - Baugruppe Mühlental - Mahlmühle aus Weipertshofen - Flur - blaue Wand mit Feuerlöscher (2).jpg",
+   "by": "Roman Eisele",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Hohenloher_Freilandmuseum_-_Baugruppe_M%C3%BChlental_-_Mahlm%C3%BChle_aus_Weipertshofen_-_Flur_-_blaue_Wand_mit_Feuerl%C3%B6scher_(2).jpg"
+  },
+  "쇠지렛대(빠루)": {
+   "t": "Crowbar without haft.jpg",
+   "by": "Juha Kämäräinen",
+   "lic": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Crowbar_without_haft.jpg"
+  },
+  "전기충격기": {
+   "t": "Carbon tape used for stun gun proof clothing.jpeg",
+   "by": "Shenzhen",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Carbon_tape_used_for_stun_gun_proof_clothing.jpeg"
+  },
+  "전기톱": {
+   "t": "Chainsaw.JPG",
+   "by": "kallerna",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Chainsaw.JPG"
+  },
+  "프라이팬": {
+   "t": "Frying pan.JPG",
+   "by": "Stangoldsmith",
+   "lic": "CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Frying_pan.JPG"
+  },
+  "하키 스틱": {
+   "t": "Hockey-stick door handle, Tim Hortons, Kingsville, Ontario, 2025-06-29.jpg",
+   "by": "Chris Woodrich",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Hockey-stick_door_handle,_Tim_Hortons,_Kingsville,_Ontario,_2025-06-29.jpg"
+  },
+  "활": {
+   "t": "Recurve Bow.jpg",
+   "by": "ArcheryMama",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Recurve_Bow.jpg"
+  }
+ },
+ "oldtoy": {
+  "100원 뽑기": {
+   "t": "Gashapon machines (Hong Kong).jpg",
+   "by": "Mk2010",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Gashapon_machines_(Hong_Kong).jpg"
+  },
+  "공기": {
+   "t": "Gonggi pebbles.jpg",
+   "by": "국립국어원",
+   "lic": "CC BY-SA 2.0 kr",
+   "url": "https://commons.wikimedia.org/wiki/File:Gonggi_pebbles.jpg"
+  },
+  "구슬": {
+   "t": "Edinburgh Castle through Glass Marbles at the College of Art - geograph.org.uk - 973482.jpg",
+   "by": "Sarah Charlesworth",
+   "lic": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Edinburgh_Castle_through_Glass_Marbles_at_the_College_of_Art_-_geograph.org.uk_-_973482.jpg"
+  },
+  "균형잡는 새": {
+   "t": "Balancing Eagle.jpg",
+   "by": "U3211603",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Balancing_Eagle.jpg"
+  },
+  "다마고치": {
+   "t": "Tamagotchi 0124 ubt.jpeg",
+   "by": "Tomasz Sienicki [user: tsca, mail: tomasz.sienicki at gmail.com]",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Tamagotchi_0124_ubt.jpeg"
+  },
+  "동서남북": {
+   "t": "Cootie catcher.jpg",
+   "by": "Paul Blais",
+   "lic": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Cootie_catcher.jpg"
+  },
+  "무지개 스프링": {
+   "t": "Slinky rainbow.jpg",
+   "by": "No machine-readable author provided. Enochlau assumed (based on copyright claims).",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Slinky_rainbow.jpg"
+  },
+  "문방구 뽑기": {
+   "t": "Capsule toy machine 20211229 142535.jpg",
+   "by": "Ka23 13",
+   "lic": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Capsule_toy_machine_20211229_142535.jpg"
+  },
+  "물풍선": {
+   "t": "Sea of water balloons by Slaunger 2009-06-26 2.jpg",
+   "by": "Kim Hansen",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Sea_of_water_balloons_by_Slaunger_2009-06-26_2.jpg"
+  },
+  "미니카": {
+   "t": "Tiny Die-cast Model Car of the 1950s in Front View - November 11, 2018.jpg",
+   "by": "Accurend",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Tiny_Die-cast_Model_Car_of_the_1950s_in_Front_View_-_November_11,_2018.jpg"
+  },
+  "보드게임": {
+   "t": "Board game pieces.jpg",
+   "by": "Mshuang2",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Board_game_pieces.jpg"
+  },
+  "부메랑": {
+   "t": "Boomerang-ETHOC 026590-P8190456-gradient.jpg",
+   "by": "Rama MEG — Musée d’ethnographie de Genève (official website)",
+   "lic": "CC BY-SA 3.0 fr",
+   "url": "https://commons.wikimedia.org/wiki/File:Boomerang-ETHOC_026590-P8190456-gradient.jpg"
+  },
+  "비비탄 총": {
+   "t": "BB-pellets.JPG",
+   "by": "Erik1980 at Dutch Wikipedia",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:BB-pellets.JPG"
+  },
+  "씨몽키": {
+   "t": "Sea Monkey (brine shrimp).jpg",
+   "by": "DaMongMan from Canada",
+   "lic": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Sea_Monkey_(brine_shrimp).jpg"
+  },
+  "요요": {
+   "t": "Yo yo toy.jpg",
+   "by": "ANBARASU THIRAVIYAM",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Yo_yo_toy.jpg"
+  },
+  "척척이(스네이크 큐브)": {
+   "t": "Rubik's Snake 1.jpg",
+   "by": "Matěj Baťha",
+   "lic": "CC BY-SA 2.5",
+   "url": "https://commons.wikimedia.org/wiki/File:Rubik%27s_Snake_1.jpg"
+  },
+  "총 모양 물총": {
+   "t": "Water Gun.jpg",
+   "by": "Gaurav Dhwaj Khadka",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Water_Gun.jpg"
+  },
+  "큐브": {
+   "t": "Rubiks cube by keqs.jpg",
+   "by": "Lars Karlsson (Keqs)",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Rubiks_cube_by_keqs.jpg"
+  },
+  "탱탱볼": {
+   "t": "Bouncing ball strobe edit.jpg",
+   "by": "MichaelMaggs Edit by Richard Bartz",
+   "lic": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Bouncing_ball_strobe_edit.jpg"
+  },
+  "팽이": {
+   "t": "Beigoma 01.jpg",
+   "by": "Σ64",
+   "lic": "CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Beigoma_01.jpg"
+  },
+  "퍼즐": {
+   "t": "Red jigsaw puzzle pieces 2.jpg",
+   "by": "Profpcde",
+   "lic": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Red_jigsaw_puzzle_pieces_2.jpg"
+  },
+  "프로펠러": {
+   "t": "Taketombo.jpg",
+   "by": "Tomomarusan",
+   "lic": "CC BY 2.5",
+   "url": "https://commons.wikimedia.org/wiki/File:Taketombo.jpg"
+  },
+  "화약총": {
+   "t": "Monkeyman65capgun.jpg",
+   "by": "Monkeyman65",
+   "lic": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Monkeyman65capgun.jpg"
+  }
  }
 };
